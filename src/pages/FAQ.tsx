@@ -216,27 +216,27 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             {categories.map((category, categoryIndex) => {
               const IconComponent = category.icon;
               return (
-                <Card key={categoryIndex} className="overflow-hidden">
-                  <CardHeader className={`${category.color} text-white`}>
+                <Card key={categoryIndex} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                  <CardHeader className="pb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                        <IconComponent className="h-6 w-6" />
+                      <div className={`w-10 h-10 ${category.color} rounded-lg flex items-center justify-center`}>
+                        <IconComponent className="h-5 w-5 text-white" />
                       </div>
-                      <CardTitle className="text-2xl">{category.title}</CardTitle>
+                      <CardTitle className="text-xl font-bold">{category.title}</CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6">
+                  <CardContent className="pt-0">
                     <Accordion type="single" collapsible className="w-full">
                       {category.faqs.map((faq, faqIndex) => (
-                        <AccordionItem key={faqIndex} value={`item-${categoryIndex}-${faqIndex}`}>
-                          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                        <AccordionItem key={faqIndex} value={`item-${categoryIndex}-${faqIndex}`} className="border-b border-muted/30 last:border-0">
+                          <AccordionTrigger className="text-left font-semibold hover:text-primary py-4">
                             {faq.question}
                           </AccordionTrigger>
-                          <AccordionContent className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                          <AccordionContent className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line pb-4">
                             {faq.answer}
                           </AccordionContent>
                         </AccordionItem>

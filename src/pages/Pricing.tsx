@@ -54,7 +54,7 @@ const Pricing = () => {
             GST additional | All prices in INR
           </p>
           <p className="text-xs text-white/70 mt-2">
-            * Maximum 50 participants per session
+            * maximum 50 participants per session recommended
           </p>
         </div>
       </section>
@@ -172,35 +172,6 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-
-          {/* Scale Pricing Note */}
-          <Card className="mt-8 border-0 bg-gradient-to-br from-primary/5 to-accent/5 shadow-lg">
-            <CardContent className="p-8 md:p-10">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xl">✦</span>
-                </div>
-                <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-2">Enterprise & Scale Pricing</h3>
-                  <p className="text-sm text-muted-foreground">Premium packages for large-scale implementation</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                For organizations planning to train 500+ employees or requiring multi-location delivery, 
-                we offer customized enterprise packages with:
-              </p>
-              <ul className="space-y-2 ml-6">
-                <li className="text-muted-foreground">• Volume discounts (up to 30% for 500+ participants)</li>
-                <li className="text-muted-foreground">• Train-the-trainer programs (build internal facilitation capacity)</li>
-                <li className="text-muted-foreground">• Hybrid delivery models (optimize for reach and engagement)</li>
-                <li className="text-muted-foreground">• Extended support periods (6-12 months post-training reinforcement)</li>
-                <li className="text-muted-foreground">• Dedicated success manager (single point of contact for entire program)</li>
-                <li className="text-muted-foreground">• Custom content development (organization-specific use cases and templates)</li>
-                <li className="text-muted-foreground">• Executive briefings and stakeholder updates (keep leadership informed)</li>
-                <li className="text-muted-foreground">• Adoption analytics and reporting (track ROI and identify improvement areas)</li>
-              </ul>
             </CardContent>
           </Card>
         </div>
