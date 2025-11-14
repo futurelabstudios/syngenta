@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Users, TrendingUp, Brain, Target, CheckCircle, Globe, Zap, Building, Lock, Truck } from "lucide-react";
+import { Shield, Users, TrendingUp, Brain, Zap, CheckCircle, Globe, Lock, Building } from "lucide-react";
 
 const FAQ = () => {
   const categories = [
@@ -12,46 +12,50 @@ const FAQ = () => {
       color: "bg-primary",
       faqs: [
         {
-          question: "Will our data be safe when we use these tools?",
-          answer: "Absolutely. Data security and compliance are non-negotiable:\n\n• Enterprise-grade tools only: SOC2, GDPR, ISO 27001 compliant systems\n• All live demos use synthetic or redacted data with no sensitive information exposed\n• Prototype development in isolated sandboxes: access-controlled environments with audit trails\n• Data never leaves your environment without explicit permission: full data sovereignty\n• Role-based access controls (RBAC): users only access data relevant to their function\n• Encryption at rest and in transit with enterprise-standard security protocols\n• Regular security audits and compliance reviews: ongoing monitoring and reporting\n• Clear data retention and deletion policies: you maintain full control over your information\n\nWe can also work within your existing security frameworks and obtain necessary approvals from your IT and compliance teams before any training begins."
+          question: "How do you ensure client data security during the program?",
+          answer: "Data security is foundational to our approach:\n\n• Enterprise-grade tools only: SOC2, GDPR, ISO 27001 compliant systems\n• All demos use synthetic or redacted data with zero sensitive information exposed\n• Prototype development in isolated sandboxes: access-controlled environments with audit trails\n• Data never leaves your environment without explicit permission: full data sovereignty\n• Role-based access controls (RBAC): users only access data relevant to their function\n• Encryption at rest and in transit with enterprise-standard security protocols\n• Regular security audits and compliance reviews with ongoing monitoring\n• Clear data retention and deletion policies: you maintain full control\n\nWe work within your existing security frameworks and obtain necessary approvals before training begins."
         },
         {
-          question: "How can we ensure safe, ethical use for a global brand?",
-          answer: "We include AI governance templates, ethical use policies, brand safety protocols, data handling checklists, and role-specific guardrails. These ensure brand assets, consumer data, and confidential information are always protected."
+          question: "Will the AI tools comply with financial regulations?",
+          answer: "Yes. All tools are built with compliance as a core requirement:\n\n• No data leaves secure environments without audit trails\n• All AI operations are logged and reviewable\n• Tools integrate with your compliance workflows\n• Documentation for audit and regulatory reviews\n• Role-based access ensures only authorized personnel use sensitive AI features\n• We can customize to align with SEBI, RBI, and other relevant regulatory requirements"
         }
       ]
     },
     {
       icon: Users,
-      title: "Program Scope & Scale",
+      title: "Program Scope & Engagement",
       color: "bg-accent",
       faqs: [
         {
-          question: "Which teams will benefit the most from this training?",
-          answer: "In agriculture and agritech, significant ROI is typically seen in:\n\n• Marketing: faster farmer insight generation & regional campaign workflows with substantial time savings\n• Sales & Field Teams: automated field reporting, farmer interaction summaries, dealer analytics with increased effective field time\n• R&D & Agronomy: accelerated research analysis, seed trial data synthesis, agronomic report generation\n• Supply Chain: seasonal demand modelling and seed distribution forecasting with improved accuracy\n• Finance: automated summaries, reconciliations, variance analysis with reduced month-end close time\n• HR & Learning: personalized learning pathways for agronomists, automated job descriptions for specialized agriculture roles\n• Leadership: strategic decision augmentation with data-driven agricultural insights\n\nEvery team gains immediate productivity improvements through everyday task automation. The key is that benefits compound: as more teams adopt AI, cross-functional agricultural processes become exponentially more efficient."
+          question: "Which teams benefit most from this 3-month program?",
+          answer: "Maximum ROI is typically seen in:\n\n• Advisory Teams: Accelerated portfolio analysis, market research, client communication\n• Operations: Workflow automation, reporting, efficiency improvements\n• Trading & Markets: Data processing, market intelligence synthesis, alert generation\n• Finance: Automated reconciliations, P&L analysis, forecasting\n• HR & Learning: Talent acquisition, personalized development paths\n• Marketing & Client Success: Automated communications, campaign optimization\n\nEvery team gains immediate productivity improvements. The key is that benefits compound as more teams adopt AI—cross-functional processes become exponentially more efficient."
         },
         {
-          question: "Can you train 500+ employees at scale?",
-          answer: "Yes. We've scaled AI training programs to 1000+ employees across multiple organizations using proven methodologies:\n\n• Hybrid cohorts: mix of virtual and in-person sessions optimized for reach and engagement\n• Train-the-trainer programs: build internal facilitation capacity for sustained rollout\n• Cohort segmentation: by geography, function, or organizational level for targeted content\n• Self-paced learning modules: pre-work and post-work to maximize live session value\n• Centralized knowledge hub: templates, libraries, FAQs, and resources accessible 24/7\n• Scalable support model: tiered support from peer champions to department experts to our team\n• Measurement and analytics: track adoption, engagement, and impact across all cohorts\n\nOur approach ensures consistency of learning while allowing customization for specific team needs. We can scale to train large groups of employees based on your preferred pace and organizational needs."
+          question: "What if we can't commit the full team availability?",
+          answer: "The program is flexible:\n\n• Minimum viable: 2 hours per week for training participation + 2 hours for project reviews\n• Leadership sponsorship ensures protected time for key stakeholders\n• We can stagger training across teams to distribute load\n• Monthly reports show ROI, making it easy to justify team time investment\n• Tools are designed for easy adoption, reducing support overhead"
         },
         {
-          question: "What if teams don't adopt AI after training?",
-          answer: "We've designed our program with proven change management principles to maximize adoption:\n\n• Post-session office hours (2 hours/week for 4 weeks) for troubleshooting and support\n• Team-specific playbooks with step-by-step workflows for common tasks\n• Adoption metrics dashboard to track usage and identify barriers early\n• Follow-up nudges through existing communication channels (email, Slack, Teams)\n• Department champions program: peer advocates who model AI usage and support colleagues\n• Integration with performance reviews: AI literacy as a competency in skill assessments\n• Regular success story sharing: celebrating wins builds momentum\n\nOur experience shows that adoption rates are significantly higher when leadership participates visibly and implementation time is protected. The goal is real behaviour change, not a one-off workshop."
+          question: "What happens if we want to extend beyond 3 months?",
+          answer: "Extensions are seamless:\n\n• Continue monthly retainers at the same rate for additional development\n• Option to shift to hourly basis for ad-hoc support\n• We can help scale proven tools across more teams\n• Handover process is designed for smooth transition to internal ownership\n• Post-launch warranty period (4 weeks) ensures smooth operations"
         }
       ]
     },
     {
       icon: Brain,
-      title: "Custom Solutions",
+      title: "Custom Tools & IP",
       color: "bg-secondary",
       faqs: [
         {
-          question: "Can we build our own Olam-specific AI assistant?",
-          answer: "Absolutely. The Prototype Sprint is designed to build custom solutions like:\n\n• A customer segmentation tool for the Ghana B2C marketing team\n• A demand forecasting model for supply chain optimization\n• A sourcing analytics tool to predict farmer yields\n• An internal knowledge assistant trained securely on Olam's operational guidelines, market intelligence, and sustainability reports."
+          question: "Can we build tools specific to IMMPL's workflows?",
+          answer: "Absolutely—that's the core of the AI Build Program. We can create:\n\n• AI Deal Assistant: PDF/contract analysis with red flags and summaries\n• AI Market Research Agent: Automated global market intelligence gathering\n• AI Document Generator: LOIs, SOPs, reports, client communications\n• AI Client Information Hub: Secure RAG-based knowledge system\n• Custom agentic systems: Autonomous workflows for repetitive processes\n• Custom GPTs: Purpose-built assistants for your specific workflows\n\nAll tools are tailored to IMMPL's processes, terminology, and compliance requirements."
         },
         {
-          question: "Can your team help craft a long-term AI strategy for Olam?",
-          answer: "Yes, our program is designed to deliver a strategic AI roadmap. We help you establish a 12-24 month plan covering pilot projects, enterprise scaling, technology choices, governance, skills development, and change management tailored to Olam's global operations."
+          question: "Who owns the code and IP generated?",
+          answer: "IMMPL owns 100% of the code, tools, and intellectual property developed during the engagement. Futurelab Studios retains the right to use learnings and methodologies for future projects (with your data anonymized)."
+        },
+        {
+          question: "Can tools be modified or extended after launch?",
+          answer: "Yes. We provide:\n\n• Complete technical documentation and code repositories\n• Training for your team to understand and maintain tools\n• Support for modifications and enhancements\n• Option to continue hourly engagements for additional features\n• Clear transition plan so you can eventually own full development"
         }
       ]
     },
@@ -61,23 +65,31 @@ const FAQ = () => {
       color: "bg-orange",
       faqs: [
         {
-          question: "What's the ROI of this program?",
-          answer: "The ROI is measured through:\n\n• Efficiency Gains: Significant productivity lift across the value chain, from sourcing to corporate functions, by automating repetitive tasks.\n• Cost Reduction: Improved forecasting and logistics planning to reduce waste, stock-outs, and operational overhead.\n• Revenue Growth: For the Ghana B2C business, AI-driven marketing can directly impact consumer acquisition, retention, and sales.\n• Strategic Agility: Faster, data-driven decision-making in response to market changes.\n\nFor a global leader like Olam, these benefits translate into substantial and sustainable financial impact."
+          question: "How do you measure success and ROI?",
+          answer: "ROI is tracked through multiple lenses:\n\n• Efficiency Gains: Time saved on routine tasks (tracked via tool usage logs)\n• Quality Improvements: Better insights, faster decision-making, fewer errors\n• Cost Savings: Reduced operational overhead, lower processing costs\n• Revenue Impact: Faster client advisory, improved market responsiveness\n• Adoption Metrics: Team usage rates, feature adoption, feedback scores\n• Financial Impact: Quantified in terms of employee hours saved, process improvements\n\nMonthly reports provide transparent visibility into progress and impact."
+        },
+        {
+          question: "What's a realistic timeline to see ROI?",
+          answer: "Typically:\n\n• Immediate (Week 1-4): First tools deployed, team starts using them\n• Short-term (Month 2): Measurable efficiency gains, workflow improvements\n• Medium-term (Month 3+): Compounding benefits as more processes are automated\n• Long-term (6-12 months): Strategic advantages in market responsiveness and decision quality\n\nMany clients see measurable productivity gains within the first 2-3 weeks of using custom tools."
         }
       ]
     },
     {
-      icon: Globe,
+      icon: Zap,
       title: "Integration & Technology",
       color: "bg-green",
       faqs: [
         {
-          question: "We already use Microsoft/Google internally. Will this training integrate?",
-          answer: "100%. We customize workflows for your existing tech stack, whether it's Microsoft 365, Google Workspace, SAP, or other internal data systems. The training adapts to your technology, not the other way around."
+          question: "Do the tools integrate with IMMPL's existing systems?",
+          answer: "Yes. We design integrations with:\n\n• Your email and communication platforms\n• CRM and client management systems\n• Finance and accounting software\n• Document management systems\n• Data warehouses and analytics platforms\n• Existing internal tools and workflows\n\nWe work within your existing tech stack—tools adapt to your infrastructure, not the other way around."
         },
         {
-          question: "Can you show real examples from the food and agri-business sector?",
-          answer: "Yes, all our examples are tailored. We demonstrate relevant workflows, including:\n\n• Consumer segmentation for B2C brands\n• Commodity price trend analysis\n• Supply chain and logistics optimization\n• Farmer network data analysis\n• Sustainability report summarization\n• Financial reconciliation automation"
+          question: "What if we use non-standard or legacy systems?",
+          answer: "We can handle most setups:\n\n• Custom API integrations for legacy systems\n• Middleware solutions to connect disparate tools\n• Data transformation pipelines to harmonize information\n• Sometimes recommend modern alternatives if integration complexity is high\n• Always provide clear recommendations with timeline and cost implications"
+        },
+        {
+          question: "Can tools work offline or with limited internet?",
+          answer: "Depends on the tool:\n\n• Some tools are fully cloud-based (always require internet)\n• Others can be deployed locally on your servers\n• We discuss deployment options during discovery\n• Offline-first tools can sync when connectivity is restored\n• Clear guidance on infrastructure requirements before development begins"
         }
       ]
     }
@@ -85,43 +97,43 @@ const FAQ = () => {
 
   const departmentBenefits = [
     {
-      icon: Target,
-      title: "Marketing (Ghana B2C)",
+      icon: TrendingUp,
+      title: "Advisory Teams",
       benefits: [
-        "Hyper-personalize consumer campaigns for brands like 'Mama Gold'",
-        "Gain deep consumer insights from sales and social media data",
-        "Optimize channel mix and marketing spend for higher ROI",
-        "Accelerate new product ideation based on emerging trends"
+        "AI-powered portfolio analysis with market context",
+        "Automated client communication and meeting summaries",
+        "Rapid market research and competitive intelligence",
+        "Personalized investment insights at scale"
       ]
     },
     {
-      icon: Truck,
-      title: "Supply Chain & Operations",
+      icon: Zap,
+      title: "Operations",
       benefits: [
-        "Improve demand forecasting accuracy to reduce waste and stock-outs",
-        "Optimize logistics from processing mills to distribution centers",
-        "Implement predictive maintenance in facilities to minimize downtime",
-        "Enhance quality control with AI-powered analysis"
-      ]
-    },
-    {
-      icon: Users,
-      title: "Sourcing & Farmer Analytics",
-      benefits: [
-        "Enhance sourcing efficiency with predictive yield analytics",
-        "Improve farmer engagement with data-driven support tools",
-        "Strengthen sustainable sourcing initiatives with better data monitoring",
-        "Gain a clearer view of the entire upstream supply chain"
+        "Workflow automation reducing manual processes",
+        "Intelligent reporting and dashboard generation",
+        "Predictive alerts for key metrics",
+        "Process optimization through AI insights"
       ]
     },
     {
       icon: Building,
-      title: "Corporate Functions (Finance, HR, Legal)",
+      title: "Finance & Back Office",
       benefits: [
-        "Automate financial reporting, reconciliations, and analysis",
-        "Streamline talent acquisition and create personalized L&D pathways in HR",
-        "Accelerate contract review and compliance monitoring in Legal",
-        "Drive enterprise-wide efficiency through workflow automation"
+        "Automated reconciliations and P&L analysis",
+        "Faster month-end close and reporting",
+        "Expense and invoice processing automation",
+        "Financial forecasting and scenario modeling"
+      ]
+    },
+    {
+      icon: Users,
+      title: "HR & Talent",
+      benefits: [
+        "AI-powered candidate screening and matching",
+        "Personalized learning and development paths",
+        "Talent analytics and succession planning",
+        "Automated HR documentation and communications"
       ]
     }
   ];
@@ -139,7 +151,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Answers to key questions for leadership teams about AI enablement at Olam.
+            Answers to key questions about the IMMPL AI Enablement Program
           </p>
         </div>
       </section>
@@ -149,10 +161,10 @@ const FAQ = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              How This Program Drives Olam's Strategic Priorities
+              How This Program Drives IMMPL Forward
             </h2>
             <p className="text-base text-muted-foreground max-w-3xl mx-auto">
-              The program is tailored to Olam's value chain, from sourcing and supply chain to the B2C market transition in Ghana.
+              Tailored AI solutions for wealth management, trading, finance, and operations
             </p>
           </div>
 
@@ -191,10 +203,10 @@ const FAQ = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              Leadership & Capability Manager FAQs
+              Leadership & Program FAQs
             </h2>
             <p className="text-base text-muted-foreground max-w-3xl mx-auto">
-              Strategic answers to the questions CXOs, BU heads, and capability leaders typically ask
+              Strategic answers to questions CXOs and leadership teams ask
             </p>
           </div>
 
@@ -237,7 +249,7 @@ const FAQ = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              Why Futurelab Studios Is the Right Partner for Olam
+              Why Futurelab Studios Is the Right Partner
             </h2>
           </div>
 
@@ -247,8 +259,8 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-sm mb-1">Global Reach</h3>
-                <p className="text-muted-foreground text-xs">50+ organisations served across India, UAE, Africa, SEA</p>
+                <h3 className="font-bold text-sm mb-1">Proven Track Record</h3>
+                <p className="text-muted-foreground text-xs">150+ AI enablement programs, 50+ organizations transformed, 5000+ professionals trained</p>
               </CardContent>
             </Card>
 
@@ -257,8 +269,8 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
                   <Building className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-sm mb-1">Agri-Business & FMCG Expertise</h3>
-                <p className="text-muted-foreground text-xs">Deep experience across the end-to-end value chain, from sourcing and processing to consumer brands.</p>
+                <h3 className="font-bold text-sm mb-1">Finance & Advisory Expertise</h3>
+                <p className="text-muted-foreground text-xs">Deep experience across wealth management, trading, and financial operations</p>
               </CardContent>
             </Card>
 
@@ -268,7 +280,7 @@ const FAQ = () => {
                   <Zap className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-bold text-sm mb-1">Strategy + Execution</h3>
-                <p className="text-muted-foreground text-xs">Hybrid of strategy + hands-on building</p>
+                <p className="text-muted-foreground text-xs">Hybrid of strategic planning and hands-on engineering for real impact</p>
               </CardContent>
             </Card>
 
@@ -277,8 +289,8 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center mx-auto mb-3">
                   <Lock className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-sm mb-1">Security First</h3>
-                <p className="text-muted-foreground text-xs">Strong security, governance & compliance focus</p>
+                <h3 className="font-bold text-sm mb-1">Security & Compliance First</h3>
+                <p className="text-muted-foreground text-xs">Regulatory awareness and enterprise-grade security built in</p>
               </CardContent>
             </Card>
 
@@ -287,8 +299,8 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-3">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-sm mb-1">Proven Team</h3>
-                <p className="text-muted-foreground text-xs">Founders with leadership experience at top-tier FMCG, technology, and agri-business related companies.</p>
+                <h3 className="font-bold text-sm mb-1">Trusted Team</h3>
+                <p className="text-muted-foreground text-xs">Founders with experience at top tech, finance, and FMCG companies</p>
               </CardContent>
             </Card>
 
@@ -298,7 +310,7 @@ const FAQ = () => {
                   <CheckCircle className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-bold text-sm mb-1">Results Driven</h3>
-                <p className="text-muted-foreground text-xs">Focus on measurable outcomes and adoption</p>
+                <p className="text-muted-foreground text-xs">Focus on measurable outcomes and sustainable adoption</p>
               </CardContent>
             </Card>
           </div>
@@ -311,4 +323,3 @@ const FAQ = () => {
 };
 
 export default FAQ;
-

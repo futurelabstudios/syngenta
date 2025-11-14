@@ -1,115 +1,139 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Zap, Code, Database, Shield, AlertCircle } from "lucide-react";
+import { CheckCircle, Code, Users, AlertCircle, Zap, Lock, Award } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Wave3 = () => {
-  const prototypes = [
+  const tools = [
     {
-      name: "Ghana B2C Marketing: Customer Segmentation Tool",
-      description: "A tool to segment Ghanaian consumers based on demographics, purchase behavior, and location to power personalized marketing campaigns for brands like 'Mama Gold'.",
-      technical: "Integrates with sales/POS data and uses clustering algorithms (e.g., K-Means) to identify distinct consumer personas. Deploys as an interactive dashboard for the marketing team.",
+      name: "AI Financial Planning Tool",
+      description: "Comprehensive financial planning & advisory tool. Backend integration complete. Full demo available next week. Built on proven architecture (see: fin-planning.netlify.app).",
+      technical: "Full-stack financial modeling, LLM-powered advice generation, multi-scenario planning",
+      timeline: "Weeks 1-2 (refinement & integration)",
+      status: "✓ Under Final Construction"
+    },
+    {
+      name: "AI Deal Assistant",
+      description: "PDF and contract ingestion system that synthesizes documents, identifies red flags, and generates executive summaries.",
+      technical: "Document processing, LLM-powered analysis, structured output generation",
+      timeline: "2-3 weeks"
+    },
+    {
+      name: "AI Market Research Agent",
+      description: "Autonomous agent that scrapes, processes, and summarizes global market information relevant to IMMPL's investment thesis.",
+      technical: "Web scraping, data aggregation, intelligent summarization, scheduled reports",
       timeline: "3-4 weeks"
     },
     {
-      name: "Supply Chain: Demand Forecasting Model",
-      description: "A predictive model to forecast demand for key products at a regional level, helping to optimize inventory, reduce stock-outs, and minimize waste.",
-      technical: "Time-series forecasting model (e.g., ARIMA, Prophet) trained on historical sales data, seasonality, and macroeconomic indicators.",
-      timeline: "4-6 weeks"
+      name: "AI Document Generator",
+      description: "Tool for rapidly generating LOIs, SOPs, client reports, pitch templates, and other structured business documents.",
+      technical: "Template engine, dynamic content insertion, format conversion, compliance checking",
+      timeline: "2-3 weeks"
     },
     {
-      name: "Sourcing: Farmer Yield Prediction Analytics",
-      description: "An analytics tool to predict crop yields for key commodities sourced from Olam's farmer network, improving procurement planning and supply chain visibility.",
-      technical: "Machine learning model using historical yield data, weather patterns, and satellite imagery. Results are visualized on a GIS dashboard.",
-      timeline: "5-7 weeks"
+      name: "AI Client Information Hub",
+      description: "Secure internal knowledge system that answers questions about IMMPL's documents, processes, and client information.",
+      technical: "Retrieval-Augmented Generation (RAG), vector database, role-based access control",
+      timeline: "3-4 weeks"
     },
     {
-      name: "Internal Knowledge Assistant",
-      description: "A secure, internal search agent that allows teams to query Olam's vast knowledge base, including operational guidelines, sustainability reports, and market intelligence.",
-      technical: "Utilizes Retrieval-Augmented Generation (RAG) on a vector database of Olam's internal documents, with role-based access control.",
-      timeline: "3-5 weeks"
+      name: "Custom Agentic Systems",
+      description: "Autonomous workflows that handle repetitive processes, improve coordination, and enable data-driven decision-making.",
+      technical: "Multi-step workflows, LLM orchestration, external API integrations, monitoring dashboards",
+      timeline: "Tailored per use case (2-4 weeks each)"
+    },
+    {
+      name: "WhatsApp Workflow Prototypes",
+      description: "Optional: Team communication and notification systems via WhatsApp for real-time updates and alerts.",
+      technical: "WhatsApp Business API integration, message templating, automated responses",
+      timeline: "2-3 weeks (if needed)"
     }
   ];
 
   const phases = [
     {
-      phase: "Discovery",
-      duration: "Week 1",
+      phase: "Month 1: Foundation & Requirements",
+      duration: "Weeks 1-4",
       activities: [
-        "Identify 3-5 high-impact use cases through stakeholder interviews",
-        "Technical assessment of data availability, quality, and accessibility",
-        "Security and compliance review: what can/cannot be used for training",
-        "Define success metrics and acceptance criteria"
+        "AI Deep-Dive Training + tool requirement workshops",
+        "Identify 3-4 high-impact tools to build (based on training feedback)",
+        "Technical assessment: data, security, compliance, integrations",
+        "Architecture planning for each tool",
+        "Finalize specs and prioritization for Months 2-4"
       ]
     },
     {
-      phase: "Design",
-      duration: "Week 2",
+      phase: "Month 2: Build Sprint 1",
+      duration: "Weeks 5-8",
       activities: [
-        "Solution architecture: model selection, infrastructure requirements",
-        "Data pipeline design: extraction, transformation, security protocols",
-        "Integration planning with existing systems (ERP, CRM, data warehouse)",
-        "User experience mockups and workflow design"
+        "Solution architecture & design for Tool 1",
+        "Data pipeline setup with security protocols",
+        "UI/UX mockups with team feedback",
+        "Initial development and weekly demos",
+        "Tool 1 approaching first internal release"
       ]
     },
     {
-      phase: "Build",
-      duration: "Weeks 3-5",
+      phase: "Month 3: Build Sprint 2",
+      duration: "Weeks 9-12",
       activities: [
-        "Rapid prototyping with weekly iteration cycles",
-        "Model training and fine-tuning (if required)",
-        "User testing with 5-10 pilot users per iteration",
-        "Refinement based on feedback and performance metrics"
+        "Tool 1 refinement, UAT, production deployment",
+        "Parallel development of Tool 2",
+        "Team training on Tool 1",
+        "Weekly demos of Tool 2 progress",
+        "Documentation and knowledge transfer"
       ]
     },
     {
-      phase: "Deploy",
-      duration: "Week 6",
+      phase: "Month 4: Deploy & Transition",
+      duration: "Weeks 13-16",
       activities: [
-        "User acceptance testing with larger pilot group (20-50 users)",
-        "Documentation: user guides, admin guides, troubleshooting",
-        "Training sessions for pilot users and administrators",
-        "Handover to IT team with runbooks and support procedures"
+        "Tool 2 UAT and production deployment",
+        "Start Tool 3 development (if prioritized)",
+        "Team training on deployed tools",
+        "Handoff to internal team",
+        "4-week support & optimization period",
+        "Roadmap for next phases"
       ]
     }
   ];
 
   const outcomes = [
-    "A live prototype ready for pilot deployment, demonstrating clear business value in a key strategic area (e.g., Ghana B2C marketing).",
-    "A comprehensive roadmap for scaling the pilot to an enterprise-grade solution, including technical requirements, governance, and change management.",
-    "Olam's internal pilot team is upskilled and capable of contributing to future AI development projects.",
-    "A repeatable process and operating model for identifying, building, and deploying AI solutions across the organization.",
-    "A robust business case with clear ROI projections to justify further investment in scaling the solution.",
-    "Complete technical documentation, code, and handover materials to ensure a smooth transition to Olam's IT and data teams.",
-    "Trained internal champions who can advocate for and support the new solution within their respective departments."
+    "Tool 1 deployed to production and actively used by team",
+    "Tool 2 in advanced testing with clear deployment timeline",
+    "Internal team upskilled in AI tool usage and best practices",
+    "Comprehensive roadmap for scaling additional tools across IMMPL",
+    "Clear business case with ROI projections for continued investment",
+    "Complete technical documentation and runbooks for operations",
+    "Internal champions trained to support and advocate for new tools"
   ];
 
   const criticalConsiderations = [
     {
-      title: "Data Availability & Quality",
-      content: "Prototypes require access to relevant, clean data. If data quality is poor, we spend time on data prep, not AI building. Recommendation: Complete data audit 2 weeks before sprint begins to identify and resolve data access and quality issues proactively."
+      title: "Data Availability & Security",
+      icon: Lock,
+      content: "Tools require access to IMMPL's data. Recommendation: Conduct data audit early to identify requirements, security protocols, and any compliance constraints."
     },
     {
-      title: "Stakeholder Availability",
-      content: "Success depends on regular feedback from business users (minimum 2 hours/week). Without it, we build something nobody uses. Recommendation: Secure executive sponsorship and pre-block time for weekly review sessions with key stakeholders."
+      title: "Stakeholder Engagement",
+      icon: Users,
+      content: "Success depends on regular feedback from end users (minimum 2 hours/week). Recommendation: Secure executive sponsorship and block time for weekly review sessions."
     },
     {
-      title: "Technical Infrastructure",
-      content: "Some prototypes require API access to internal systems. IT security review and approval can add 2-4 weeks. Recommendation: Engage IT and security teams during discovery phase to identify requirements and expedite approvals."
-    },
-    {
-      title: "Scope Management",
-      content: "We ruthlessly prioritize 'must-haves' over 'nice-to-haves'. Feature creep kills momentum and timelines. Recommendation: Use MoSCoW prioritization (Must have, Should have, Could have, Won't have) agreed upon by all stakeholders before development begins."
-    },
-    {
-      title: "Change Management",
-      content: "Technical success doesn't guarantee adoption. User experience, training, and communication are equally critical. Recommendation: Involve end users from day one, conduct usability testing every iteration, and prepare comprehensive rollout communication plan."
-    },
-    {
-      title: "Scalability Planning",
-      content: "Prototypes work with 10-50 users. Scaling to 500+ requires different architecture, infrastructure, and support models. Recommendation: Design with scale in mind from the start to document assumptions, performance benchmarks, and infrastructure requirements for full-scale deployment."
+      title: "Production Readiness",
+      icon: Zap,
+      content: "Tools must meet production standards (performance, reliability, security). Recommendation: Plan for 2-week stabilization period before go-live with monitoring."
     }
+  ];
+
+  const deliverables = [
+    "Fully functional AI tools deployed to production",
+    "User documentation, admin guides, and training materials",
+    "Technical architecture documentation and code repository",
+    "Monitoring dashboards and performance metrics",
+    "Runbooks and support procedures for operations team",
+    "Post-launch support plan (minimum 4-week warranty period)"
   ];
 
   return (
@@ -125,49 +149,47 @@ const Wave3 = () => {
               Module 3
             </Badge>
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">Prototype Sprint & Scaling</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">
+            AI Build Program
+          </h1>
           <div className="flex items-center justify-center gap-6 text-white/90 mb-4">
-            <span className="text-lg">2-6 Weeks Sprint</span>
+            <span className="text-lg">CTO-Led Custom Tool Development</span>
             <span className="text-white/50">•</span>
-            <span className="text-lg">Selected Pilot Teams</span>
+            <span className="text-lg">Months 1-4</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            A hands-on sprint to build a working AI prototype for a high-priority use case, delivering tangible business value and creating a roadmap for enterprise-wide adoption.
+            Dedicated engineering team to design, build, and deploy custom AI tools. Requirements defined in Month 1 training. Tools shipped and deployed in Months 2-4.
           </p>
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-          
-          {/* What We Can Build */}
-          <div>
-            <h2 className="text-3xl font-bold mb-3">Example Olam Pilot Projects</h2>
-          <p className="text-muted-foreground mb-10 text-lg">
-            Below are examples of high-impact AI prototypes we can build together during the sprint.
-          </p>
-            <div className="grid gap-6">
-              {prototypes.map((prototype, index) => (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all group">
-                  <CardHeader>
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex items-start gap-4 flex-1">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-                          <Zap className="h-6 w-6 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <CardTitle className="text-xl mb-2">{prototype.name}</CardTitle>
-                          <p className="text-muted-foreground leading-relaxed">{prototype.description}</p>
-                        </div>
-                      </div>
-                      <Badge variant="outline" className="shrink-0">{prototype.timeline}</Badge>
+      {/* Main Content */}
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Tools */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Custom AI Tools</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {tools.map((tool, index) => (
+                <Card key={index} className={`group hover:shadow-xl transition-all duration-300 ${tool.status ? 'border-l-4 border-l-green' : ''}`}>
+                  <CardHeader className="bg-gradient-to-br from-white to-muted/50">
+                    <div className="flex items-start justify-between">
+                      <CardTitle className="text-xl">{tool.name}</CardTitle>
+                      {tool.status && <Badge className="bg-green text-white text-xs">{tool.status}</Badge>}
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/30">
-                      <Code className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <p className="text-sm text-muted-foreground">{prototype.technical}</p>
+                  <CardContent className="pt-6 space-y-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground">{tool.description}</p>
+                    </div>
+                    <div className="bg-primary/5 p-3 rounded-lg border border-primary/10">
+                      <p className="text-xs font-semibold text-primary mb-1">Technical Stack:</p>
+                      <p className="text-sm text-muted-foreground">{tool.technical}</p>
+                    </div>
+                    <div className="bg-accent/5 p-3 rounded-lg border border-accent/10">
+                      <p className="text-xs font-semibold text-accent mb-1">Timeline:</p>
+                      <p className="text-sm text-muted-foreground">{tool.timeline}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -175,27 +197,61 @@ const Wave3 = () => {
             </div>
           </div>
 
-          {/* Build Process */}
-          <div>
-            <h2 className="text-3xl font-bold mb-3">How We Build It</h2>
-          <p className="text-muted-foreground mb-10 text-lg">
-            Structured sprint methodology with clear milestones and decision points.
-          </p>
-            <div className="space-y-4">
+          {/* Developer Experience */}
+          <section className="bg-gradient-to-br from-primary/10 to-secondary/10 border-2 border-primary/30 rounded-xl p-8 md:p-12 mb-16 shadow-lg">
+            <h3 className="text-3xl font-bold text-foreground mb-6">Proven Development Team</h3>
+            <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+              Our backend developer brings hands-on experience building production-grade financial planning & advisory tools:
+            </p>
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-6 mb-6 border border-primary/20">
+              <div className="flex items-start gap-4">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-foreground mb-2">MyFinMentor Platform</h4>
+                  <p className="text-muted-foreground mb-3">
+                    Previously architected and built the entire <a href="https://myfinmentor.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline decoration-2 underline-offset-2 font-bold">MyFinMentor.com</a> platform — a comprehensive financial mentoring & advisory tool serving real clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-6 mb-6 border border-primary/20">
+              <div className="flex items-start gap-4">
+                <div className="bg-secondary/10 p-3 rounded-lg">
+                  <Code className="h-8 w-8 text-secondary" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-foreground mb-2">FinancePlan Tool (In Development)</h4>
+                  <p className="text-muted-foreground mb-3">
+                    Currently building <a href="https://fin-planning.netlify.app" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline decoration-2 underline-offset-2 font-bold">fin-planning.netlify.app</a> — an advanced financial planning tool with LLM-powered insights and multi-scenario modeling.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              This proven track record means <span className="font-semibold text-foreground">faster development, fewer integration issues, and tools that are built to scale from day one.</span>
+            </p>
+          </section>
+
+          {/* Timeline */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-8 text-center">4-Month Engagement Timeline</h2>
+            <div className="space-y-6">
               {phases.map((phase, index) => (
-                <Card key={index} className="border-l-4 border-primary">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-lg">{phase.phase}</CardTitle>
-                      <Badge className="bg-primary/10 text-primary border-primary/20">{phase.duration}</Badge>
+                <Card key={index} className="border-l-4 border-l-primary">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground">{phase.phase}</h3>
+                        <p className="text-sm text-accent font-semibold">{phase.duration}</p>
+                      </div>
                     </div>
-                  </CardHeader>
-                  <CardContent>
                     <ul className="space-y-2">
-                      {phase.activities.map((activity, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-muted-foreground">{activity}</span>
+                      {phase.activities.map((activity, i) => (
+                        <li key={i} className="text-sm text-muted-foreground flex items-start">
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
+                          {activity}
                         </li>
                       ))}
                     </ul>
@@ -205,110 +261,56 @@ const Wave3 = () => {
             </div>
           </div>
 
-          {/* Critical Considerations */}
-          <div>
-            <h2 className="text-3xl font-bold mb-3">Critical Considerations</h2>
-          <p className="text-muted-foreground mb-10 text-lg">
-            Honest assessment of what can derail a prototyping sprint and how we mitigate these risks.
-          </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              {criticalConsiderations.map((item, index) => (
-                <Card key={index} className="border-0 shadow-lg">
-                  <CardHeader>
-                    <div className="flex items-start gap-3">
-                      <AlertCircle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-0.5" />
-                      <CardTitle className="text-lg">{item.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">{item.content}</p>
-                  </CardContent>
-                </Card>
+          {/* Outcomes */}
+          <section className="bg-primary/5 border border-primary/20 rounded-xl p-8 md:p-12 mb-16">
+            <h3 className="text-3xl font-bold text-foreground mb-8">Expected Outcomes</h3>
+            <div className="space-y-3">
+              {outcomes.map((outcome, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <p className="text-muted-foreground">{outcome}</p>
+                </div>
               ))}
             </div>
-          </div>
+          </section>
 
-          {/* Expected Outcomes */}
-          <div>
-            <h2 className="text-3xl font-bold mb-8">Expected Outcomes</h2>
-            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-lg">
-              <CardContent className="p-8">
-                <ul className="space-y-5">
-                  {outcomes.map((outcome, index) => (
-                    <li key={index} className="flex items-start gap-4">
-                      <CheckCircle className="h-7 w-7 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-lg font-medium text-foreground leading-relaxed">{outcome}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+          {/* Deliverables */}
+          <section className="bg-orange/5 border border-orange/20 rounded-xl p-8 md:p-12 mb-16">
+            <h3 className="text-3xl font-bold text-foreground mb-8">Deliverables</h3>
+            <ul className="grid md:grid-cols-2 gap-4">
+              {deliverables.map((deliverable, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <Zap className="h-5 w-5 text-orange flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{deliverable}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
 
-          {/* Security & Governance */}
-          <Card className="border-2 border-primary/20">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <Shield className="h-6 w-6 text-primary" />
-                <CardTitle>Security & Governance by Default</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">All prototypes built in isolated sandboxes with zero access to production systems</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Data handling protocols reviewed and approved by your security team before build starts</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">All model outputs logged and auditable for full transparency with compliance teams</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Role-based access controls and data encryption as standard, not optional add-ons</span>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Custom Pricing Note */}
-          <Card className="border-2 border-primary/30 bg-primary/5">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <Database className="h-8 w-8 text-primary flex-shrink-0" />
-                <div>
-                  <h3 className="text-xl font-bold mb-3">Investment</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    The investment for the Prototype Sprint is determined after the Deep Dive & Discovery phase, based on the selected use case's complexity and scope.
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">→</span>
-                      <span>Complexity of use case and data integration requirements</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">→</span>
-                      <span>Timeline expectations and resource allocation needs</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">→</span>
-                      <span>Number of prototypes and iterations required</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">→</span>
-                      <span>Level of ongoing support and knowledge transfer expected</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
+          {/* Critical Considerations */}
+          <section className="bg-amber-50 border border-amber-200 rounded-xl p-8 md:p-12">
+            <h3 className="text-3xl font-bold text-foreground mb-8 flex items-center">
+              <AlertCircle className="h-8 w-8 mr-3 text-amber-600" />
+              Critical Success Factors
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {criticalConsiderations.map((factor, index) => {
+                const IconComponent = factor.icon;
+                return (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-amber-100">
+                    <div className="flex items-center gap-2 mb-3">
+                      <IconComponent className="h-5 w-5 text-amber-600" />
+                      <h4 className="font-bold text-foreground">{factor.title}</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{factor.content}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

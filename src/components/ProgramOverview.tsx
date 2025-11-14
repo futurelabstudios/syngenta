@@ -1,66 +1,49 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Crown, Building2, Globe, Clock, Users, BookOpen } from "lucide-react";
+import { Brain, Zap, Package, Clock, Users, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ProgramOverview = () => {
   const waves = [
     {
       id: 1,
-      title: "Executive Briefing & AI Foundations",
-      subtitle: "Strategy Alignment for Leadership & Teams",
-      icon: Crown,
-      participants: "C-Suite, Global & Ghana Leadership, Mid-management",
-      duration: "Customizable Sessions",
-      schedule: "Aligning on a shared vision and building core AI literacy",
+      title: "AI Deep-Dive & Tool Adoption",
+      subtitle: "Training + Identifying Your Tools",
+      icon: Brain,
+      participants: "All IMMPL teams (Advisory, Operations, Finance, HR, Trading)",
+      duration: "Months 1-4",
+      schedule: "Hands-on training with focus on day-to-day application",
       focus: [
-        "AI's impact on the global agri-business value chain",
-        "Aligning AI with Olam’s Purpose and sustainability agenda",
-        "Data landscape in agriculture, from farm-gate to consumer",
-        "High-potential use cases in supply chain, sourcing, and B2C marketing"
+        "Deep dive into AI capabilities relevant to your work",
+        "Identify specific AI tools & workflows for each function",
+        "Hands-on practice with real use cases",
+        "Build internal capability and governance",
+        "Prepare requirements for custom tool development"
       ],
-      outcome: "Shared AI vision | Prioritised use-case domains",
+      outcome: "Team upskilled | Tools identified | Custom tool specs ready | Adoption readiness",
       color: "bg-primary",
       accentColor: "border-l-4 border-secondary",
-      href: "/wave-1"
+      href: "/ai-deep-dive"
     },
     {
       id: 2,
-      title: "Deep Dive & Discovery",
-      subtitle: "Unlocking Functional Excellence",
-      icon: Building2,
-      participants: "Cross-functional teams (Sourcing, Ops, Marketing)",
-      duration: "Multi-session Workshops",
-      schedule: "Ideation and planning for high-impact AI pilots",
+      title: "AI Build Program",
+      subtitle: "Custom Tools Shipped Monthly",
+      icon: Package,
+      participants: "IMMPL stakeholders + Futurelab team (Shabbir + Kuntal + 2 Senior Developers)",
+      duration: "Months 1-4 (parallel builds)",
+      schedule: "Design, build, and deploy internal AI tools to production",
       focus: [
-        "Ghana Marketing (B2C): Consumer segmentation, personalised marketing",
-        "Supply Chain: Demand forecasting, logistics optimisation",
-        "Sourcing: Farmer analytics, yield prediction, quality control",
-        "Data Readiness: Assessing data sources, governance, and tech stack"
+        "AI Deal Assistant (PDF/contract ingestion & analysis)",
+        "AI Market Research Agent (data aggregation & synthesis)",
+        "AI Document Generator (LOIs, SOPs, reports, templates)",
+        "AI Client Information Hub & Custom workflows",
+        "Tools refined based on Month 1-3 feedback"
       ],
-      outcome: "A validated short-list of 2-3 pilot use-cases | Data-readiness roadmap",
-      color: "bg-accent",
-      accentColor: "border-l-4 border-orange",
-      href: "/wave-2"
-    },
-    {
-      id: 3,
-      title: "Prototype Sprint & Scaling",
-      subtitle: "From Pilot to Enterprise Capability",
-      icon: Globe,
-      participants: "Selected pilot teams + Futurelab engineers",
-      duration: "2-6 Weeks Sprint",
-      schedule: "Building a live solution and a plan for enterprise adoption",
-      focus: [
-        "Rapidly build a Proof-of-Concept for a high-priority use case",
-        "Example Pilot (Ghana B2C): A customer segmentation tool",
-        "Example Pilot (Supply Chain): A demand forecasting model",
-        "Building a governance model and roadmap for scaling AI across Olam"
-      ],
-      outcome: "A live prototype ready for deployment | A roadmap for enterprise adoption",
+      outcome: "Tools shipped monthly | Production-ready systems | Full documentation | Team trained on tools",
       color: "bg-green",
       accentColor: "border-l-4 border-secondary",
-      href: "/wave-3"
+      href: "/ai-build"
     }
   ];
 
@@ -69,14 +52,14 @@ const ProgramOverview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            An AI Enablement Journey
+            Two Core Pillars Over 4 Months
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A modular program to build AI capability across Olam, from strategic alignment to hands-on prototyping. Each stage is tailored to Olam's unique value chain, supporting key priorities like the B2C transition in Ghana, supply chain resilience, and sustainable sourcing.
+            Deep training on AI tools + identifying what your team needs daily. Custom tools built and shipped monthly.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-12">
           {waves.map((wave) => {
             const IconComponent = wave.icon;
             return (

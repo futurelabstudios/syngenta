@@ -5,10 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Wave1 from "./pages/Wave1";
-import Wave2 from "./pages/Wave2";
 import Wave3 from "./pages/Wave3";
 import Facilitators from "./pages/Facilitators";
-import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
 
@@ -22,11 +20,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/wave-1" element={<Wave1 />} />
-          <Route path="/wave-2" element={<Wave2 />} />
-          <Route path="/wave-3" element={<Wave3 />} />
-          <Route path="/facilitators" element={<Facilitators />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/ai-deep-dive" element={<Wave1 />} />
+          <Route path="/ai-build" element={<Wave3 />} />
+          <Route path="/team" element={<Facilitators />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

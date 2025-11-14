@@ -77,10 +77,10 @@ const Facilitators = () => {
         
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
-            Your Facilitators
+            The Team
           </h1>
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Industry veterans with deep expertise in AI enablement, business strategy, and organizational transformation.
+            4-person team deployed for the 4-month partnership: 2 strategic leaders + 2 senior developers with proven experience building financial planning platforms.
           </p>
         </div>
       </section>
@@ -88,6 +88,7 @@ const Facilitators = () => {
       {/* Facilitators Detail */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Leadership Team</h2>
           <div className="space-y-16">
             {facilitators.map((facilitator, index) => (
               <Card key={index} className="overflow-hidden shadow-2xl border-0 hover:shadow-3xl transition-all duration-300">
@@ -163,95 +164,49 @@ const Facilitators = () => {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* About Futurelab Studios */}
-      <section className="py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              About Futurelab Studios
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Leading the AI transformation journey for organizations across industries
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <Card className="bg-gradient-coke text-white border-0 shadow-2xl">
+          {/* Developers Section */}
+          <div className="mt-20 pt-16 border-t">
+            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Development Team</h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="hover:shadow-lg transition-all">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-6">Our Impact</h3>
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold mb-2">150+</div>
-                      <div className="text-white/80">AI Enablement Workshops</div>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center text-white text-2xl font-bold">
+                      FE
                     </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold mb-2">50+</div>
-                      <div className="text-white/80">Organizations Transformed</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold mb-2">5000+</div>
-                      <div className="text-white/80">Professionals Trained</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold mb-2">95%</div>
-                      <div className="text-white/80">Client Satisfaction</div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">Senior Frontend Developer</h3>
+                      <p className="text-sm text-muted-foreground">UI/UX & State Management</p>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Builds beautiful, responsive interfaces for all custom AI tools. Handles complex state management and ensures smooth user experiences across all teams.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-16 h-16 bg-accent rounded-lg flex items-center justify-center text-white text-2xl font-bold">
+                      BE
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">Senior Backend Developer</h3>
+                      <p className="text-sm text-muted-foreground">Architecture & LLM Integration</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Designs robust backend infrastructure for AI tools. Handles LLM integrations, data pipelines, API development, and production deployment of all systems. Brings hands-on experience building financial planning platforms (MyFinMentor, FinancePlan).
+                  </p>
                 </CardContent>
               </Card>
             </div>
-
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-foreground">Organizational AI Enablement Specialists</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Futurelab Studios is a pioneering AI enablement and innovation company dedicated to helping organizations 
-                adopt AI meaningfully and strategically. We specialize in democratizing AI knowledge across all organizational 
-                levels, from C-suite executives to frontline employees.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Industry-First Approach:</strong> Pioneering practical AI implementation frameworks specifically designed for Indian enterprises
-                  </span>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Comprehensive Enablement:</strong> From executive strategy sessions to organization-wide capability building programs
-                  </span>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Proven Methodology:</strong> Data-driven approaches with measurable ROI and sustainable transformation outcomes
-                  </span>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Future-Ready Solutions:</strong> Cutting-edge AI tools integration with emphasis on responsible AI practices and ethical implementation
-                  </span>
-                </div>
-              </div>
-
-              <div className="pt-4">
-                <Badge className="bg-primary text-white px-4 py-2 text-sm">
-                  Trusted by Fortune 500 companies, startups, and government organizations
-                </Badge>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-
-      
       <Footer />
     </div>
   );
