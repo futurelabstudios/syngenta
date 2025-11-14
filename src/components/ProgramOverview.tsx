@@ -14,12 +14,12 @@ const ProgramOverview = () => {
       duration: "2 Sessions × 3 Hours",
       schedule: "Foundation building for organization-wide adoption",
       focus: [
-        "The real AI landscape for large FMCG: what matters, what doesn't",
+        "The real AI landscape for agriculture & agritech: what matters, what doesn't",
         "Everyday productivity stack (Docs, Sheets, Email, Research, Comms)",
-        "Data privacy, brand safety, and compliance",
-        "Cross-functional beverage industry use cases",
-        "Auto-generating trend summaries from consumer data",
-        "Automating weekly sales reports & market visit summaries"
+        "Data privacy, regulatory compliance, and safety protocols",
+        "Cross-functional agriculture industry use cases",
+        "Auto-generating agronomic trend summaries from field data",
+        "Automating weekly crop performance reports & farmer visit summaries"
       ],
       outcome: "Everyone speaks the same AI vocabulary | Immediate productivity gains",
       color: "bg-primary",
@@ -35,10 +35,10 @@ const ProgramOverview = () => {
       duration: "2 Sessions × 3 Hours per Function",
       schedule: "Marketing, Sales, Finance, Supply Chain, HR",
       focus: [
-        "Marketing: Campaign pretesting, consumer insights, content workflows",
-        "Sales: AI assistant for beat plans, retailer insights, distributor analytics",
+        "Marketing: Campaign planning, farmer insights, localized content workflows",
+        "Sales: AI assistant for territory planning, dealer insights, distributor analytics",
         "Finance: Automated reconciliations, P&L commentary, variance analysis",
-        "Supply Chain: Demand forecasting, route optimization, supplier risk intelligence",
+        "Supply Chain: Demand forecasting, seed health tracking, supplier risk intelligence",
         "HR: Learning pathways, job descriptions, capability intel"
       ],
       outcome: "Team-level adoption | Efficiency gains measurable within 30 days",
@@ -55,11 +55,11 @@ const ProgramOverview = () => {
       duration: "2-6 Weeks Sprint",
       schedule: "Enablement + Prototyping Sprint",
       focus: [
-        "AI Sales Assistant trained on HCCB GTM processes and beat planning",
-        "Marketing research bot reading past trackers & presentations",
+        "AI Agronomy Assistant trained on Syngenta crop protection protocols and field planning",
+        "Research intelligence bot reading past seed trials, lab reports & agronomic studies",
         "Finance autopilot for month-end closings",
-        "Internal knowledge search agent for commercial teams",
-        "Custom GPT powered by brand codes & guidelines"
+        "Internal knowledge search agent for commercial and field teams",
+        "Custom GPT powered by Syngenta product guidelines & safety protocols"
       ],
       outcome: "Working prototypes | Deployment readiness | Repeatable AI operating model",
       color: "bg-green",
@@ -76,9 +76,9 @@ const ProgramOverview = () => {
             Program Options
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three tailored programs designed to build AI capability across HCCB: from 
+            Three tailored programs designed to build AI capability across Syngenta India: from 
             foundation building to functional excellence to custom prototyping. Each program 
-            combines proven adult learning principles, hands-on practice, and real-world FMCG 
+            combines proven adult learning principles, hands-on practice, and real-world agriculture 
             scenarios to ensure knowledge transfer and sustainable adoption.
           </p>
         </div>

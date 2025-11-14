@@ -12,55 +12,55 @@ const Wave1 = () => {
       icon: "🎯",
       color: "bg-primary",
       topics: [
-        "Understanding the real AI landscape for FMCG: separating signal from noise",
-        "GPT, Claude, Gemini: which models work best for which enterprise use cases",
+        "Understanding the real AI landscape for agriculture & agritech: separating signal from noise",
+        "GPT, Claude, Gemini: which models work best for which agricultural enterprise use cases",
         "Prompt engineering fundamentals: how to communicate effectively with AI",
         "Advanced prompting techniques: chain-of-thought, few-shot learning, role-based prompts",
-        "Crafting context-rich prompts that deliver high-quality, actionable outputs",
+        "Crafting context-rich prompts that deliver high-quality, actionable outputs for agronomic decisions",
         "Common pitfalls and how to avoid hallucinations in AI responses"
       ],
       examples: [
-        "Transform vague queries into precise prompts that save 70% iteration time",
-        "Extract structured insights from unstructured data (customer feedback, market research)",
-        "Generate executive summaries from 50-page reports in 2 minutes"
+        "Transform vague queries into precise prompts that save 70% iteration time in agronomic research",
+        "Extract structured insights from unstructured data (farmer feedback, field trial reports, lab data)",
+        "Generate executive summaries from 50-page seed health reports or agronomic studies in 2 minutes"
       ]
     },
     {
-      title: "Productivity Tools for FMCG Teams",
+      title: "Productivity Tools for Agriculture Teams",
       subtitle: "Everyday Efficiency Multipliers",
       icon: "⚡",
       color: "bg-accent",
       topics: [
-        "AI-powered document generation: reports, memos, presentations in minutes",
+        "AI-powered document generation: agronomic reports, field memos, presentations in minutes",
         "Smart email management: auto-drafts, priority sorting, meeting extraction",
-        "Intelligent spreadsheet automation: data analysis, trend identification, forecasting",
-        "Research acceleration: competitive intelligence, market trends, consumer insights",
-        "Meeting productivity: AI note-taking, action items, follow-ups",
-        "Collaborative work tools: real-time co-creation with AI assistance"
+        "Intelligent spreadsheet automation: seed health data analysis, yield trend identification, forecasting",
+        "Research acceleration: competitive intelligence, crop trends, farmer insights",
+        "Meeting productivity: AI note-taking for field visits, action items, follow-ups",
+        "Collaborative work tools: real-time co-creation with AI assistance for research teams"
       ],
       examples: [
-        "Auto-generate weekly sales reports with data validation (70% time reduction)",
-        "Create market visit summaries in 5 minutes vs. 45 minutes",
-        "Transform raw POS data into actionable distributor insights"
+        "Auto-generate weekly crop performance reports with data validation (70% time reduction)",
+        "Create farmer visit summaries in 5 minutes vs. 45 minutes",
+        "Transform raw field trial data into actionable agronomic insights"
       ]
     },
     {
-      title: "AI Creative Suite for FMCG Teams",
+      title: "AI Creative Suite for Agriculture Teams",
       subtitle: "Marketing & Content at Scale",
       icon: "🎨",
       color: "bg-orange",
       topics: [
-        "Brand-safe content generation: maintaining voice and compliance at scale",
-        "Visual asset creation: concept mockups, social media content, presentations",
-        "Campaign ideation and rapid prototyping: 10 concepts in the time of 1",
-        "Localization at scale: adapting content for regional markets and languages",
-        "Video and multimedia: storyboarding, scripting, editing with AI assistance",
-        "Creative workflows that integrate brand guidelines and approval processes"
+        "Brand-safe content generation: maintaining Syngenta voice and regulatory compliance at scale",
+        "Visual asset creation: crop education materials, farmer-facing content, presentations",
+        "Campaign ideation and rapid prototyping: 10 farmer outreach concepts in the time of 1",
+        "Localization at scale: adapting agronomic content for regional crops, languages, and farming practices",
+        "Video and multimedia: storyboarding for farmer education, scripting, editing with AI assistance",
+        "Creative workflows that integrate Syngenta brand guidelines and regulatory approval processes"
       ],
       examples: [
-        "Generate 50 social media variants for a campaign in 20 minutes",
-        "Create retailer-specific promotional materials with localized messaging",
-        "Develop brand-compliant JBP decks with automated data integration"
+        "Generate 50 farmer education content variants across regional languages in 20 minutes",
+        "Create dealer-specific promotional materials with crop-specific localized messaging",
+        "Develop compliant product presentation decks with automated field trial data integration"
       ]
     },
     {
@@ -77,20 +77,20 @@ const Wave1 = () => {
         "Governance and safety: ensuring AI agents operate within guardrails"
       ],
       examples: [
-        "Auto-generate flavour trend summaries from consumer data (saves 4-6 hours/week)",
-        "AI checklists for safe usage of brand assets: prevent compliance issues",
-        "Automated inventory optimization alerts based on demand patterns"
+        "Auto-generate agronomic trend summaries from field data and farmer feedback (saves 4-6 hours/week)",
+        "AI checklists for safe product usage and regulatory compliance: prevent compliance issues",
+        "Automated seed inventory optimization alerts based on seasonal demand patterns"
       ]
     }
   ];
 
   const outcomes = [
-    "Everyone speaks the same AI vocabulary: critical for org-wide adoption and cross-functional collaboration",
-    "Organizational confidence in safe and correct use: reduces shadow IT risks and ensures compliance with data governance policies",
-    "Immediate productivity lift based on industry benchmarks from similar FMCG organizations",
-    "Established foundation for advanced AI adoption: teams understand when and how to leverage AI for their specific workflows",
-    "Reduced resistance to change: participants see firsthand how AI augments rather than replaces human expertise",
-    "Clear AI governance framework in place: policies, guidelines, and escalation paths for safe organizational use"
+    "Everyone speaks the same AI vocabulary: critical for org-wide adoption and cross-functional collaboration across R&D, field operations, and commercial teams",
+    "Organizational confidence in safe and correct use: reduces shadow IT risks and ensures compliance with agricultural regulations and data governance policies",
+    "Immediate productivity lift based on industry benchmarks from leading agriculture and life sciences organizations",
+    "Established foundation for advanced AI adoption: teams understand when and how to leverage AI for agronomic research, field operations, and commercial workflows",
+    "Reduced resistance to change: participants see firsthand how AI augments rather than replaces agronomic and scientific expertise",
+    "Clear AI governance framework in place: policies, guidelines, and escalation paths for safe organizational use in regulated agricultural contexts"
   ];
 
   const prerequisites = [
@@ -129,7 +129,7 @@ const Wave1 = () => {
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
             Foundation building program designed for immediate productivity gains. Learn the real AI landscape 
-            for enterprise FMCG operations: what works, what doesn't, and why it matters.
+            for enterprise agriculture operations: what works, what doesn't, and why it matters for Syngenta India.
           </p>
         </div>
       </section>
@@ -142,8 +142,8 @@ const Wave1 = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-3">Four Strategic Pillars</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Practical AI skills you can apply immediately. 
-              Each segment includes hands-on exercises with FMCG-specific scenarios.
+              Practical AI skills you can apply immediately to agricultural operations. 
+              Each segment includes hands-on exercises with agriculture and agritech-specific scenarios.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ const Wave1 = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-foreground">HCCB Use Cases</h3>
+                    <h3 className="text-xl font-bold mb-4 text-foreground">Syngenta Use Cases</h3>
                     <div className="space-y-4">
                       {segment.examples.map((example, idx) => (
                         <Card key={idx} className="border-l-4 border-primary bg-primary/5">

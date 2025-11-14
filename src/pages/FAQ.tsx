@@ -28,7 +28,7 @@ const FAQ = () => {
       faqs: [
         {
           question: "Which teams will benefit the most from this training?",
-          answer: "In FMCG, significant ROI is typically seen in:\n\n• Marketing: faster insight generation & campaign workflows with substantial time savings\n• Sales: automated reporting, JBP creation, retailer analytics with increased effective selling time\n• Supply Chain: scenario modelling and forecasting with improved accuracy\n• Finance: automated summaries, reconciliations, variance analysis with reduced month-end close time\n• HR & Learning: personalized learning pathways, automated job descriptions with faster hiring cycles\n• Leadership: strategic decision augmentation with data-driven insights\n\nEvery team gains immediate productivity improvements through everyday task automation. The key is that benefits compound: as more teams adopt AI, cross-functional processes become exponentially more efficient."
+          answer: "In agriculture and agritech, significant ROI is typically seen in:\n\n• Marketing: faster farmer insight generation & regional campaign workflows with substantial time savings\n• Sales & Field Teams: automated field reporting, farmer interaction summaries, dealer analytics with increased effective field time\n• R&D & Agronomy: accelerated research analysis, seed trial data synthesis, agronomic report generation\n• Supply Chain: seasonal demand modelling and seed distribution forecasting with improved accuracy\n• Finance: automated summaries, reconciliations, variance analysis with reduced month-end close time\n• HR & Learning: personalized learning pathways for agronomists, automated job descriptions for specialized agriculture roles\n• Leadership: strategic decision augmentation with data-driven agricultural insights\n\nEvery team gains immediate productivity improvements through everyday task automation. The key is that benefits compound: as more teams adopt AI, cross-functional agricultural processes become exponentially more efficient."
         },
         {
           question: "Can you train 500+ employees at scale?",
@@ -46,12 +46,12 @@ const FAQ = () => {
       color: "bg-secondary",
       faqs: [
         {
-          question: "Can we build our own HCCB-specific AI assistant?",
-          answer: "Absolutely. Under the AI Builders program, we can create:\n\n• Internal custom GPT\n• Knowledge search bot\n• Sales assistant\n• Marketing research agent\n• Forecasting support assistant\n\nTrained securely on your documents & workflows."
+          question: "Can we build our own Syngenta-specific AI assistant?",
+          answer: "Absolutely. Under the AI Builders program, we can create:\n\n• Internal custom GPT for agronomic queries\n• Agricultural knowledge search bot\n• Field & farmer advisory assistant\n• Research intelligence agent (seed trials, lab data)\n• Seasonal demand forecasting support assistant\n\nTrained securely on your agricultural documents, protocols & workflows."
         },
         {
-          question: "Can your team help craft a long-term AI strategy for HCCB?",
-          answer: "Yes, our Discover → Design → Drive → Deliver framework is ideally suited to helping HCCB establish a 12-24 month roadmap for adoption, prototyping, tools, governance, skills, and change management."
+          question: "Can your team help craft a long-term AI strategy for Syngenta India?",
+          answer: "Yes, our Discover → Design → Drive → Deliver framework is ideally suited to helping Syngenta India establish a 12-24 month roadmap for adoption, prototyping, tools, governance, skills, and change management tailored to agricultural operations."
         }
       ]
     },
@@ -62,7 +62,7 @@ const FAQ = () => {
       faqs: [
         {
           question: "What's the ROI of AI training?",
-          answer: "AI literacy & adoption typically delivers:\n\n• Significant productivity lift organisation-wide\n• Faster turnarounds in marketing & analytics teams\n• Substantial reduction in repetitive tasks\n• Improved speed of insights, decision quality, and strategic agility\n\nFor a company of HCCB's scale, these translate into substantial efficiency gains annually."
+          answer: "AI literacy & adoption typically delivers:\n\n• Significant productivity lift organisation-wide (R&D, field operations, commercial)\n• Faster turnarounds in agronomic research, farmer insights & field analytics teams\n• Substantial reduction in repetitive tasks (report generation, data synthesis, field documentation)\n• Improved speed of agricultural insights, agronomic decision quality, and strategic agility\n\nFor a company of Syngenta India's scale and complexity, these translate into substantial efficiency gains annually across agriculture operations."
         }
       ]
     },
@@ -76,8 +76,8 @@ const FAQ = () => {
           answer: "100%. We customize workflows for Microsoft 365 Copilot, Google Workspace, Power BI, Looker, Salesforce, Tableau, and internal data sources. The training adapts to your tech stack, not the other way around."
         },
         {
-          question: "Can you show real examples from FMCG?",
-          answer: "Yes, no hypotheticals. We demonstrate FMCG-relevant workflows including:\n\n• Retail insights\n• Channel segmentation\n• Supply chain variance\n• POS data summarisation\n• Activation ideas\n• Competition moves\n• Financial reconciliations\n• Route-to-market planning"
+          question: "Can you show real examples from agriculture and agritech?",
+          answer: "Yes, no hypotheticals. We demonstrate agriculture-relevant workflows including:\n\n• Farmer and field insights\n• Crop and regional segmentation\n• Seed health and trial data analysis\n• Agronomic report summarization\n• Farmer outreach campaign ideas\n• Competitive crop protection intelligence\n• Financial reconciliations\n• Dealer network and distribution planning"
         }
       ]
     }
@@ -88,28 +88,28 @@ const FAQ = () => {
       icon: Target,
       title: "Marketing",
       benefits: [
-        "Hyperlocal campaign planning using generative research",
-        "AI-driven brand sentiment intelligence across regions",
-        "Rapid content creation for 10+ digital formats",
-        "Early warning systems for trend shifts"
+        "Hyperlocal farmer education campaign planning using generative research",
+        "AI-driven farmer sentiment intelligence across regions and crops",
+        "Rapid multi-language content creation for farmer outreach",
+        "Early warning systems for agronomic trend shifts"
       ]
     },
     {
       icon: TrendingUp,
       title: "Sales & Commercial",
       benefits: [
-        "AI copilots for daily sales calls, beat planning, and GTM",
-        "Predictive demand estimation with real-time variables",
-        "Sales deck generation customised to channels (Modern Trade, GT, B2B)"
+        "AI copilots for daily field visits, territory planning, and farmer advisory",
+        "Predictive seasonal demand estimation with weather and crop cycle variables",
+        "Product presentation generation customized to crops, regions, and dealer networks"
       ]
     },
     {
       icon: Building,
-      title: "Supply Chain & Manufacturing",
+      title: "Supply Chain & Seed Operations",
       benefits: [
-        "AI-enabled forecasting reviews",
-        "Risk scenario modelling (weather, disruptions, market shocks)",
-        "Automated reporting & executive dashboards"
+        "AI-enabled seasonal demand forecasting for seed distribution",
+        "Risk scenario modelling (weather, crop failures, supply disruptions)",
+        "Automated seed health tracking, inventory optimization, and executive dashboards"
       ]
     },
     {
@@ -126,9 +126,9 @@ const FAQ = () => {
       icon: Users,
       title: "HR & Learning",
       benefits: [
-        "AI-designed learning pathways",
-        "Automated job description creation, evaluation rubrics",
-        "Culture & capability intel from org knowledge"
+        "AI-designed learning pathways for agronomists and field teams",
+        "Automated job description creation for specialized agriculture roles",
+        "Culture & capability intel from agronomic expertise and org knowledge"
       ]
     },
     {
@@ -157,41 +157,41 @@ const FAQ = () => {
           </h1>
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
             Answers to key questions from capability managers and leadership teams about 
-            AI enablement at HCCB
+            AI enablement at Syngenta India
           </p>
         </div>
       </section>
 
       {/* Department Benefits Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why This Program Is Relevant to HCCB
+          <div className="text-center mb-10">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
+              Why This Program Is Relevant to Syngenta India
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Tailored around HCCB's priorities across all key departments
+            <p className="text-base text-muted-foreground max-w-3xl mx-auto">
+              Tailored around Syngenta India's priorities across all key departments and agricultural operations
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {departmentBenefits.map((dept, index) => {
               const IconComponent = dept.icon;
               return (
-                <Card key={index} className="hover:shadow-lg transition-all duration-300 border-l-4 border-primary">
-                  <CardHeader>
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                        <IconComponent className="h-6 w-6 text-white" />
+                <Card key={index} className="hover:shadow-md transition-all border-l-4 border-primary">
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <IconComponent className="h-4 w-4 text-white" />
                       </div>
-                      <CardTitle className="text-xl">{dept.title}</CardTitle>
+                      <CardTitle className="text-base">{dept.title}</CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
+                  <CardContent className="pt-0">
+                    <ul className="space-y-2">
                       {dept.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-start text-sm text-muted-foreground">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <li key={benefitIndex} className="flex items-start text-xs text-muted-foreground">
+                          <div className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                           <span>{benefit}</span>
                         </li>
                       ))}
@@ -205,38 +205,38 @@ const FAQ = () => {
       </section>
 
       {/* FAQ Categories Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+      <section className="py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
               Leadership & Capability Manager FAQs
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-3xl mx-auto">
               Strategic answers to the questions CXOs, BU heads, and capability leaders typically ask
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {categories.map((category, categoryIndex) => {
               const IconComponent = category.icon;
               return (
-                <Card key={categoryIndex} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 ${category.color} rounded-lg flex items-center justify-center`}>
-                        <IconComponent className="h-5 w-5 text-white" />
+                <Card key={categoryIndex} className="border shadow-md hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-2">
+                      <div className={`w-8 h-8 ${category.color} rounded-lg flex items-center justify-center`}>
+                        <IconComponent className="h-4 w-4 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-bold">{category.title}</CardTitle>
+                      <CardTitle className="text-base font-bold">{category.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pt-0">
                     <Accordion type="single" collapsible className="w-full">
                       {category.faqs.map((faq, faqIndex) => (
                         <AccordionItem key={faqIndex} value={`item-${categoryIndex}-${faqIndex}`} className="border-b border-muted/30 last:border-0">
-                          <AccordionTrigger className="text-left font-semibold hover:text-primary py-4">
+                          <AccordionTrigger className="text-left text-sm font-semibold hover:text-primary py-3">
                             {faq.question}
                           </AccordionTrigger>
-                          <AccordionContent className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line pb-4">
+                          <AccordionContent className="text-muted-foreground text-xs leading-relaxed whitespace-pre-line pb-3">
                             {faq.answer}
                           </AccordionContent>
                         </AccordionItem>
@@ -251,72 +251,72 @@ const FAQ = () => {
       </section>
 
       {/* Why Futurelab Studios Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Futurelab Studios Is a Fit for HCCB
+          <div className="text-center mb-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
+              Why Futurelab Studios Is a Fit for Syngenta India
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Global Reach</h3>
-                <p className="text-muted-foreground text-sm">50+ organisations served across India, UAE, Africa, SEA</p>
+                <h3 className="font-bold text-sm mb-1">Global Reach</h3>
+                <p className="text-muted-foreground text-xs">50+ organisations served across India, UAE, Africa, SEA</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Building className="h-8 w-8 text-white" />
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Building className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">FMCG Expertise</h3>
-                <p className="text-muted-foreground text-sm">Deep experience across FMCG, consulting, media, finance</p>
+                <h3 className="font-bold text-sm mb-1">Agriculture & Enterprise Expertise</h3>
+                <p className="text-muted-foreground text-xs">Deep experience across agriculture, life sciences, FMCG, consulting, and enterprise technology</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="h-8 w-8 text-white" />
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Strategy + Execution</h3>
-                <p className="text-muted-foreground text-sm">Hybrid of strategy + hands-on building</p>
+                <h3 className="font-bold text-sm mb-1">Strategy + Execution</h3>
+                <p className="text-muted-foreground text-xs">Hybrid of strategy + hands-on building</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lock className="h-8 w-8 text-white" />
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Lock className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Security First</h3>
-                <p className="text-muted-foreground text-sm">Strong security, governance & compliance focus</p>
+                <h3 className="font-bold text-sm mb-1">Security First</h3>
+                <p className="text-muted-foreground text-xs">Strong security, governance & compliance focus</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-white" />
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Users className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Proven Team</h3>
-                <p className="text-muted-foreground text-sm">Founders with experience in leading FMCG, Mondelez, Airtel, Google</p>
+                <h3 className="font-bold text-sm mb-1">Proven Team</h3>
+                <p className="text-muted-foreground text-xs">Founders with experience at leading enterprises: FMCG, Mondelez, Airtel, Google, and agritech ventures</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="h-8 w-8 text-white" />
+            <Card className="text-center hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Results Driven</h3>
-                <p className="text-muted-foreground text-sm">Focus on measurable outcomes and adoption</p>
+                <h3 className="font-bold text-sm mb-1">Results Driven</h3>
+                <p className="text-muted-foreground text-xs">Focus on measurable outcomes and adoption</p>
               </CardContent>
             </Card>
           </div>

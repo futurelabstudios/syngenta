@@ -16,7 +16,7 @@ const Footer = () => {
             />
           </a>
           <p className="text-white/90 text-xs text-center">
-            Proposal for HCCB (Hindustan Coca-Cola Beverages) | Built by{" "}
+            Proposal for Syngenta India | Built by{" "}
             <a 
               href="https://futurelabstudios.com/" 
               target="_blank" 

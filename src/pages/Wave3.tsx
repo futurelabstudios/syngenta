@@ -7,21 +7,21 @@ import { Badge } from "@/components/ui/badge";
 const Wave3 = () => {
   const prototypes = [
     {
-      name: "AI Sales Assistant",
-      description: "Trained on HCCB GTM processes, beat planning templates, and historical call data",
-      technical: "Fine-tuned GPT-4 model with RAG architecture and 95%+ accuracy on procedural queries",
+      name: "AI Agronomy Assistant",
+      description: "Trained on Syngenta crop protection protocols, agronomic best practices, field planning templates, and historical farmer interaction data",
+      technical: "Fine-tuned GPT-4 model with RAG architecture and 95%+ accuracy on agronomic procedural queries",
       timeline: "4-6 weeks"
     },
     {
-      name: "AI-powered Rural Retailer Toolkit",
-      description: "For FMCG GT/OT channels: product recommendations, inventory optimization, order suggestions",
-      technical: "Lightweight model for low-bandwidth with offline-first capabilities and multi-language support",
+      name: "AI-powered Farmer Advisory Toolkit",
+      description: "For dealer and field teams: crop-specific product recommendations, pest/disease identification, treatment optimization",
+      technical: "Lightweight model for low-bandwidth rural areas with offline-first capabilities and multi-language support (Hindi, Marathi, Telugu, etc.)",
       timeline: "5-7 weeks"
     },
     {
-      name: "Marketing Research Bot",
-      description: "Reads past trackers, presentations, and campaign reports for instant insights on demand",
-      technical: "Vector database with semantic search, PowerPoint/PDF parsing, and citation tracking",
+      name: "Agricultural Research Intelligence Bot",
+      description: "Reads past seed trials, field reports, lab studies, and agronomic presentations for instant research insights on demand",
+      technical: "Vector database with semantic search, PowerPoint/PDF parsing optimized for scientific data, and citation tracking",
       timeline: "3-4 weeks"
     },
     {
@@ -32,14 +32,14 @@ const Wave3 = () => {
     },
     {
       name: "Internal Knowledge Search Agent",
-      description: "Commercial teams can query policies, pricing, distributor contracts instantly",
-      technical: "Secure document indexing with role-based access control and confidence scoring",
+      description: "Field teams can query product guidelines, safety protocols, regulatory compliance, and dealer policies instantly",
+      technical: "Secure document indexing with role-based access control and confidence scoring for regulated agricultural products",
       timeline: "3-5 weeks"
     },
     {
-      name: "Custom GPT for Marketing",
-      description: "Powered by brand codes, guidelines, approved campaigns to maintain brand voice",
-      technical: "Fine-tuning on HCCB brand assets with content moderation layer and approval workflow",
+      name: "Custom GPT for Marketing & Compliance",
+      description: "Powered by Syngenta brand guidelines, regulatory requirements, approved product messaging to maintain compliance and brand voice",
+      technical: "Fine-tuning on Syngenta brand and regulatory assets with content moderation layer and approval workflow",
       timeline: "4-5 weeks"
     }
   ];
@@ -88,14 +88,14 @@ const Wave3 = () => {
   ];
 
   const outcomes = [
-    "Working prototype deployed to pilot users (not production-ready, but functional): tangible proof of concept that demonstrates real business value",
-    "Clear understanding of what works, what needs refinement, and why: documented learnings that inform future AI initiatives",
-    "Deployment readiness roadmap: what's needed to scale from pilot to production, including infrastructure, governance, and change management requirements",
-    "Repeatable process for building additional AI solutions internally: capability transfer so HCCB teams can lead future AI development projects",
-    "Business case template with ROI projections: financial justification for scaling the prototype to full production deployment",
-    "Technical documentation and handover: complete code, architecture diagrams, API documentation, and operational runbooks",
-    "Trained internal champions: cross-functional team members who can evangelize and support the solution within their departments",
-    "Risk mitigation strategies identified: potential failure modes, edge cases, and contingency plans documented and addressed"
+    "Working prototype deployed to pilot users (not production-ready, but functional): tangible proof of concept that demonstrates real agricultural business value",
+    "Clear understanding of what works, what needs refinement, and why: documented learnings that inform future AI initiatives in agronomic and field contexts",
+    "Deployment readiness roadmap: what's needed to scale from pilot to production, including infrastructure, governance, regulatory compliance, and change management requirements",
+    "Repeatable process for building additional AI solutions internally: capability transfer so Syngenta India teams can lead future AI development projects",
+    "Business case template with ROI projections: financial justification for scaling the prototype to full production deployment across India operations",
+    "Technical documentation and handover: complete code, architecture diagrams, API documentation, and operational runbooks tailored for agricultural workflows",
+    "Trained internal champions: cross-functional team members (agronomists, field teams, commercial) who can evangelize and support the solution within their departments",
+    "Risk mitigation strategies identified: potential failure modes, edge cases specific to agriculture operations, and contingency plans documented and addressed"
   ];
 
   const criticalConsiderations = [
@@ -145,8 +145,8 @@ const Wave3 = () => {
             <span className="text-lg">Cross-Functional Teams</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            From concept to working prototype: build custom AI solutions tailored to HCCB's specific 
-            workflows, data, and business processes.
+            From concept to working prototype: build custom AI solutions tailored to Syngenta India's specific 
+            agricultural workflows, agronomic data, and farming business processes.
           </p>
         </div>
       </section>
@@ -157,9 +157,9 @@ const Wave3 = () => {
           
           {/* What We Can Build */}
           <div>
-            <h2 className="text-3xl font-bold mb-3">What HCCB Could Build</h2>
+            <h2 className="text-3xl font-bold mb-3">What Syngenta India Could Build</h2>
           <p className="text-muted-foreground mb-10 text-lg">
-            Real prototypes with technical specifications, not vaporware or PowerPoint demonstrations.
+            Real agricultural AI prototypes with technical specifications, not vaporware or PowerPoint demonstrations.
           </p>
             <div className="grid gap-6">
               {prototypes.map((prototype, index) => (

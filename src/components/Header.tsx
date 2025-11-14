@@ -35,8 +35,8 @@ const Header = () => {
             <Link to="/" className="flex items-center">
               <div className="bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-lg">
                 <img 
-                  src="/images/HCCB logo.png" 
-                  alt="HCCB" 
+                  src="/images/Syngenta Logo" 
+                  alt="Syngenta" 
                   className="h-6 md:h-8 w-auto"
                 />
               </div>

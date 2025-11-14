@@ -25,8 +25,8 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6 md:mb-8">
               <img 
-                src="/images/HCCB logo.png" 
-                alt="HCCB Logo" 
+                src="/images/Syngenta Logo" 
+                alt="Syngenta Logo" 
                 className="h-16 md:h-20 lg:h-24 w-auto"
               />
             </div>
@@ -34,11 +34,11 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 text-white">
               Future Ready{" "}
               <span className="text-white block mt-2">
-                HCCB
+                Syngenta India
               </span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Enterprise AI Enablement & Capability Building for HCCB's scale-driven operations.
+              Enterprise AI Enablement & Capability Building for Syngenta India's science-driven agriculture operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 group bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 backdrop-blur-sm w-full sm:w-auto" asChild>
@@ -84,7 +84,7 @@ const Hero = () => {
                   <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
                 <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Industry Excellence</h3>
-                <p className="text-sm md:text-base text-white/90">Tailored for beverage industry leadership</p>
+                <p className="text-sm md:text-base text-white/90">Tailored for agriculture and agritech leadership</p>
               </CardContent>
             </Card>
           </div>

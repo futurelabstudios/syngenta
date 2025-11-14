@@ -10,23 +10,23 @@ const Wave2 = () => {
       title: "Marketing Deep Dive",
       icon: TrendingUp,
       focus: [
-        "AI for campaign pretesting: dramatically reduce testing cycles",
-        "Consumer insights generation from unstructured data (social, reviews, surveys)",
-        "Content creation workflows that maintain brand voice and compliance",
-        "Experimentation frameworks with built-in measurement and learning loops"
+        "AI for farmer education campaign planning: reduce development cycles",
+        "Farmer insights generation from unstructured data (feedback, field surveys, agronomic studies)",
+        "Content creation workflows that maintain Syngenta brand voice and regulatory compliance",
+        "Regional campaign frameworks with built-in measurement and learning loops"
       ],
-      metrics: "Faster campaign deployment with reduced creative iteration time"
+      metrics: "Faster campaign deployment with reduced creative iteration time for farmer outreach"
     },
     {
       title: "Sales Deep Dive",
       icon: ShoppingCart,
       focus: [
-        "AI assistant for daily beat plans: optimized routing and priority accounts",
-        "Retailer-level micro-insights from POS and inventory data",
-        "Distributor analytics: identify stock-outs and demand patterns early",
-        "Structured sales-call note automation: capture, analyze, and share instantly"
+        "AI assistant for field territory plans: optimized routing and priority dealer/farmer accounts",
+        "Dealer-level micro-insights from inventory and sales data",
+        "Distributor analytics: identify stock-outs, seasonal demand patterns, and crop-specific opportunities",
+        "Structured field-call note automation for agronomists: capture, analyze, and share farmer interactions instantly"
       ],
-      metrics: "Significant increase in effective selling time and call reporting efficiency"
+      metrics: "Significant increase in effective field time and farmer interaction reporting efficiency"
     },
     {
       title: "Finance Deep Dive",
@@ -43,12 +43,12 @@ const Wave2 = () => {
       title: "Supply Chain Deep Dive",
       icon: Truck,
       focus: [
-        "Demand forecasting scenarios with multi-variable inputs (weather, events, trends)",
-        "Route optimization considering real-time traffic, capacity, and priorities",
-        "Supplier risk intelligence: early warning system for disruptions",
-        "Inventory clean-up automation: identify slow-moving SKUs and optimization opportunities"
+        "Seasonal demand forecasting with multi-variable inputs (weather patterns, crop cycles, regional planting trends)",
+        "Distribution optimization considering regional demand, seed health protocols, and priorities",
+        "Supplier risk intelligence: early warning system for agricultural input disruptions",
+        "Seed inventory optimization: identify slow-moving products and seasonal optimization opportunities"
       ],
-      metrics: "Improved forecast accuracy and reduced logistics costs"
+      metrics: "Improved seasonal forecast accuracy and reduced logistics costs for seed distribution"
     },
     {
       title: "Legal Deep Dive",
@@ -85,8 +85,8 @@ const Wave2 = () => {
 
   const implementation = [
     "Pre-session survey to identify department-specific pain points and priorities",
-    "Customized demos using sanitized HCCB data structures (where possible)",
-    "Hands-on exercises with real workflow scenarios from each function",
+    "Customized demos using sanitized Syngenta data structures (where possible) - field trial data, crop performance metrics, farmer feedback",
+    "Hands-on exercises with real agricultural workflow scenarios from each function",
     "Post-session: 30-minute 1:1 consultation for each team lead to finalize adoption plan"
   ];
 
@@ -95,7 +95,7 @@ const Wave2 = () => {
     "Live troubleshooting of actual workflow challenges (not generic examples): participants bring real work to the session and leave with solutions",
     "Tool selection based on your existing tech stack (not vendor-driven): maximizes adoption by building on familiar systems and interfaces",
     "Focus on 'quick wins' that build momentum for larger transformations: achieving early success creates organizational enthusiasm for deeper change",
-    "Integration with existing change management frameworks: aligns with HCCB's current transformation initiatives and communication channels",
+    "Integration with existing change management frameworks: aligns with Syngenta India's current transformation initiatives and communication channels",
     "Post-training reinforcement plan: follow-up sessions, office hours, and department-specific coaching for sustained behavior change",
     "Measurement dashboard provided: track adoption rates, usage patterns, time savings, and business impact in real-time"
   ];
@@ -120,8 +120,8 @@ const Wave2 = () => {
             <span className="text-lg">Per Function</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            Department-specific programs for Marketing, Sales, Finance, Supply Chain, and HR with metrics 
-            that matter to each function.
+            Department-specific programs for Marketing, Sales, Finance, Supply Chain, R&D, and HR with metrics 
+            that matter to each agricultural function.
           </p>
         </div>
       </section>
@@ -187,15 +187,15 @@ const Wave2 = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">AI-designed learning pathways personalized to role, level, and career aspirations</span>
+                  <span className="text-muted-foreground">AI-designed learning pathways for agronomists, field teams, and commercial roles personalized to career aspirations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Automated job description creation and evaluation rubrics aligned to competency frameworks</span>
+                  <span className="text-muted-foreground">Automated job description creation for specialized agriculture roles and evaluation rubrics aligned to Syngenta's competency frameworks</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Culture & capability intelligence from organizational knowledge and feedback patterns</span>
+                  <span className="text-muted-foreground">Culture & capability intelligence from organizational knowledge, field feedback, and agronomic expertise patterns</span>
                 </li>
               </ul>
             </CardContent>
