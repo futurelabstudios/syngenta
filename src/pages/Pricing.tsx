@@ -7,30 +7,29 @@ import { CheckCircle } from "lucide-react";
 const Pricing = () => {
   const programs = [
     {
-      name: "AI Essentials",
-      audience: "All Teams including Leadership",
-      duration: "2 sessions × 3 hours",
+      name: "Essentials Package",
+      audience: "AI Strategy & Enablement",
       pricing: {
-        virtualHalf: "₹150,000",
-        virtualFull: "₹250,000",
-        inPersonHalf: "₹200,000",
-        inPersonFull: "₹300,000"
+        virtualHalf: "$3,500",
+        virtualFull: "$5,500",
+        inPersonHalf: "$4,500",
+        inPersonFull: "$6,500"
       }
     },
     {
-      name: "AI Deep Dive",
-      audience: "Functional Department Teams",
-      duration: "2 sessions × 3 hours per function",
+      name: "Deepdive Package",
+      audience: "Full Program & Prototype Sprint",
+      duration: "All Modules + Prototype Sprint",
       pricing: {
-        virtualHalf: "₹250,000",
-        virtualFull: "₹350,000",
-        inPersonHalf: "₹300,000",
-        inPersonFull: "₹400,000"
+        virtualHalf: "$5,000",
+        virtualFull: "$7,000",
+        inPersonHalf: "$6,000",
+        inPersonFull: "$8,000"
       }
     },
     {
-      name: "AI Builders",
-      audience: "Cross-Functional Teams",
+      name: "Prototype Sprint",
+      audience: "Standalone Project",
       duration: "2-6 Weeks Sprint",
       pricing: {
         custom: true
@@ -116,7 +115,7 @@ const Pricing = () => {
           {/* Important Notes */}
           <div className="text-center my-8 space-y-2">
             <p className="text-sm font-bold text-foreground">
-              GST additional | All prices in INR
+              All prices in USD
             </p>
             <p className="text-xs font-semibold text-muted-foreground">
               * maximum 50 participants per session recommended

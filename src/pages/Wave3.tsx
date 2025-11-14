@@ -7,40 +7,28 @@ import { Badge } from "@/components/ui/badge";
 const Wave3 = () => {
   const prototypes = [
     {
-      name: "AI Agronomy Assistant",
-      description: "Trained on Syngenta crop protection protocols, agronomic best practices, field planning templates, and historical farmer interaction data",
-      technical: "Fine-tuned GPT-4 model with RAG architecture and 95%+ accuracy on agronomic procedural queries",
-      timeline: "4-6 weeks"
-    },
-    {
-      name: "AI-powered Farmer Advisory Toolkit",
-      description: "For dealer and field teams: crop-specific product recommendations, pest/disease identification, treatment optimization",
-      technical: "Lightweight model for low-bandwidth rural areas with offline-first capabilities and multi-language support (Hindi, Marathi, Telugu, etc.)",
-      timeline: "5-7 weeks"
-    },
-    {
-      name: "Agricultural Research Intelligence Bot",
-      description: "Reads past seed trials, field reports, lab studies, and agronomic presentations for instant research insights on demand",
-      technical: "Vector database with semantic search, PowerPoint/PDF parsing optimized for scientific data, and citation tracking",
+      name: "Ghana B2C Marketing: Customer Segmentation Tool",
+      description: "A tool to segment Ghanaian consumers based on demographics, purchase behavior, and location to power personalized marketing campaigns for brands like 'Mama Gold'.",
+      technical: "Integrates with sales/POS data and uses clustering algorithms (e.g., K-Means) to identify distinct consumer personas. Deploys as an interactive dashboard for the marketing team.",
       timeline: "3-4 weeks"
     },
     {
-      name: "Finance Autopilot",
-      description: "Month-end closings automation: reconciliation, variance flagging, commentary generation",
-      technical: "Excel/ERP integration with audit trail generation and configurable business rules",
-      timeline: "6-8 weeks"
+      name: "Supply Chain: Demand Forecasting Model",
+      description: "A predictive model to forecast demand for key products at a regional level, helping to optimize inventory, reduce stock-outs, and minimize waste.",
+      technical: "Time-series forecasting model (e.g., ARIMA, Prophet) trained on historical sales data, seasonality, and macroeconomic indicators.",
+      timeline: "4-6 weeks"
     },
     {
-      name: "Internal Knowledge Search Agent",
-      description: "Field teams can query product guidelines, safety protocols, regulatory compliance, and dealer policies instantly",
-      technical: "Secure document indexing with role-based access control and confidence scoring for regulated agricultural products",
+      name: "Sourcing: Farmer Yield Prediction Analytics",
+      description: "An analytics tool to predict crop yields for key commodities sourced from Olam's farmer network, improving procurement planning and supply chain visibility.",
+      technical: "Machine learning model using historical yield data, weather patterns, and satellite imagery. Results are visualized on a GIS dashboard.",
+      timeline: "5-7 weeks"
+    },
+    {
+      name: "Internal Knowledge Assistant",
+      description: "A secure, internal search agent that allows teams to query Olam's vast knowledge base, including operational guidelines, sustainability reports, and market intelligence.",
+      technical: "Utilizes Retrieval-Augmented Generation (RAG) on a vector database of Olam's internal documents, with role-based access control.",
       timeline: "3-5 weeks"
-    },
-    {
-      name: "Custom GPT for Marketing & Compliance",
-      description: "Powered by Syngenta brand guidelines, regulatory requirements, approved product messaging to maintain compliance and brand voice",
-      technical: "Fine-tuning on Syngenta brand and regulatory assets with content moderation layer and approval workflow",
-      timeline: "4-5 weeks"
     }
   ];
 
@@ -88,14 +76,13 @@ const Wave3 = () => {
   ];
 
   const outcomes = [
-    "Working prototype deployed to pilot users (not production-ready, but functional): tangible proof of concept that demonstrates real agricultural business value",
-    "Clear understanding of what works, what needs refinement, and why: documented learnings that inform future AI initiatives in agronomic and field contexts",
-    "Deployment readiness roadmap: what's needed to scale from pilot to production, including infrastructure, governance, regulatory compliance, and change management requirements",
-    "Repeatable process for building additional AI solutions internally: capability transfer so Syngenta India teams can lead future AI development projects",
-    "Business case template with ROI projections: financial justification for scaling the prototype to full production deployment across India operations",
-    "Technical documentation and handover: complete code, architecture diagrams, API documentation, and operational runbooks tailored for agricultural workflows",
-    "Trained internal champions: cross-functional team members (agronomists, field teams, commercial) who can evangelize and support the solution within their departments",
-    "Risk mitigation strategies identified: potential failure modes, edge cases specific to agriculture operations, and contingency plans documented and addressed"
+    "A live prototype ready for pilot deployment, demonstrating clear business value in a key strategic area (e.g., Ghana B2C marketing).",
+    "A comprehensive roadmap for scaling the pilot to an enterprise-grade solution, including technical requirements, governance, and change management.",
+    "Olam's internal pilot team is upskilled and capable of contributing to future AI development projects.",
+    "A repeatable process and operating model for identifying, building, and deploying AI solutions across the organization.",
+    "A robust business case with clear ROI projections to justify further investment in scaling the solution.",
+    "Complete technical documentation, code, and handover materials to ensure a smooth transition to Olam's IT and data teams.",
+    "Trained internal champions who can advocate for and support the new solution within their respective departments."
   ];
 
   const criticalConsiderations = [
@@ -135,18 +122,17 @@ const Wave3 = () => {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-6">
             <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-1.5">
-              Prototyping Sprint
+              Module 3
             </Badge>
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">AI Builders Program</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">Prototype Sprint & Scaling</h1>
           <div className="flex items-center justify-center gap-6 text-white/90 mb-4">
             <span className="text-lg">2-6 Weeks Sprint</span>
             <span className="text-white/50">•</span>
-            <span className="text-lg">Cross-Functional Teams</span>
+            <span className="text-lg">Selected Pilot Teams</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            From concept to working prototype: build custom AI solutions tailored to Syngenta India's specific 
-            agricultural workflows, agronomic data, and farming business processes.
+            A hands-on sprint to build a working AI prototype for a high-priority use case, delivering tangible business value and creating a roadmap for enterprise-wide adoption.
           </p>
         </div>
       </section>
@@ -157,9 +143,9 @@ const Wave3 = () => {
           
           {/* What We Can Build */}
           <div>
-            <h2 className="text-3xl font-bold mb-3">What Syngenta India Could Build</h2>
+            <h2 className="text-3xl font-bold mb-3">Example Olam Pilot Projects</h2>
           <p className="text-muted-foreground mb-10 text-lg">
-            Real agricultural AI prototypes with technical specifications, not vaporware or PowerPoint demonstrations.
+            Below are examples of high-impact AI prototypes we can build together during the sprint.
           </p>
             <div className="grid gap-6">
               {prototypes.map((prototype, index) => (
@@ -293,9 +279,9 @@ const Wave3 = () => {
               <div className="flex items-start gap-4">
                 <Database className="h-8 w-8 text-primary flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-3">Custom Pricing</h3>
+                  <h3 className="text-xl font-bold mb-3">Investment</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Pricing determined after scoping session based on:
+                    The investment for the Prototype Sprint is determined after the Deep Dive & Discovery phase, based on the selected use case's complexity and scope.
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-2">

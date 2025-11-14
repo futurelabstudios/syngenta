@@ -8,95 +8,94 @@ const Wave1 = () => {
   const segments = [
     {
       title: "AI Landscape & Prompt Engineering",
-      subtitle: "The Art of Talking to AI",
+      subtitle: "The art of talking to AI",
       icon: "🎯",
       color: "bg-primary",
       topics: [
-        "Understanding the real AI landscape for agriculture & agritech: separating signal from noise",
-        "GPT, Claude, Gemini: which models work best for which agricultural enterprise use cases",
-        "Prompt engineering fundamentals: how to communicate effectively with AI",
-        "Advanced prompting techniques: chain-of-thought, few-shot learning, role-based prompts",
-        "Crafting context-rich prompts that deliver high-quality, actionable outputs for agronomic decisions",
-        "Common pitfalls and how to avoid hallucinations in AI responses"
+        "Understanding the AI landscape for global food & agri-business: separating signal from noise",
+        "Which frontier models (GPT-4o, Claude, Gemini) work best for sourcing, operations, and marketing tasks",
+        "Prompt engineering fundamentals plus chain-of-thought, few-shot, and role-based prompting",
+        "Crafting context-rich prompts that deliver high-quality outputs for field, finance, and marketing teams",
+        "Guardrails for avoiding hallucinations and protecting sensitive farmer or customer data"
       ],
       examples: [
-        "Transform vague queries into precise prompts that save 70% iteration time in agronomic research",
-        "Extract structured insights from unstructured data (farmer feedback, field trial reports, lab data)",
-        "Generate executive summaries from 50-page seed health reports or agronomic studies in 2 minutes"
+        "Transform vague commodity research questions into structured prompts that cut analysis time by 70%",
+        "Extract structured insights from unstructured sources such as AtSource field notes or sustainability audits",
+        "Generate executive-ready briefs on Olam’s re-organisation progress in minutes"
       ]
     },
     {
-      title: "Productivity Tools for Agriculture Teams",
-      subtitle: "Everyday Efficiency Multipliers",
+      title: "Productivity Tools for Olam Teams",
+      subtitle: "Everyday efficiency multipliers",
       icon: "⚡",
       color: "bg-accent",
       topics: [
-        "AI-powered document generation: agronomic reports, field memos, presentations in minutes",
-        "Smart email management: auto-drafts, priority sorting, meeting extraction",
-        "Intelligent spreadsheet automation: seed health data analysis, yield trend identification, forecasting",
-        "Research acceleration: competitive intelligence, crop trends, farmer insights",
-        "Meeting productivity: AI note-taking for field visits, action items, follow-ups",
-        "Collaborative work tools: real-time co-creation with AI assistance for research teams"
+        "AI-powered document generation: board memos, sourcing reports, sustainability summaries in minutes",
+        "Smart inbox management: auto-drafts, meeting extraction, and sentiment tagging for partner updates",
+        "Spreadsheet copilots for demand planning, farmer payout tracking, and cost forecasting",
+        "Research acceleration: commodity price tracking, macro insight scans, competitive intelligence",
+        "Meeting productivity: AI note-taking for plant visits, supply reviews, or marketing stand-ups",
+        "Collaboration flows: real-time co-creation in Docs/Slides/Sheets with AI assistance"
       ],
       examples: [
-        "Auto-generate weekly crop performance reports with data validation (70% time reduction)",
-        "Create farmer visit summaries in 5 minutes vs. 45 minutes",
-        "Transform raw field trial data into actionable agronomic insights"
+        "Auto-generate weekly Ghana sales & stock reports with validation (70% time reduction)",
+        "Create plant or farmer visit summaries in 5 minutes instead of 45",
+        "Turn raw POS or distributor data into actionable insights for B2C pilots"
       ]
     },
     {
-      title: "AI Creative Suite for Agriculture Teams",
-      subtitle: "Marketing & Content at Scale",
+      title: "AI Creative Suite for Marketing & Brand",
+      subtitle: "Marketing and content at scale",
       icon: "🎨",
       color: "bg-orange",
       topics: [
-        "Brand-safe content generation: maintaining Syngenta voice and regulatory compliance at scale",
-        "Visual asset creation: crop education materials, farmer-facing content, presentations",
-        "Campaign ideation and rapid prototyping: 10 farmer outreach concepts in the time of 1",
-        "Localization at scale: adapting agronomic content for regional crops, languages, and farming practices",
-        "Video and multimedia: storyboarding for farmer education, scripting, editing with AI assistance",
-        "Creative workflows that integrate Syngenta brand guidelines and regulatory approval processes"
+        "Brand-safe copy generation aligned to Olam and sub-brand tone (e.g., Mama Gold)",
+        "Visual asset creation: concept mockups, trade marketing assets, social creative",
+        "Campaign ideation sprints: 10 omnichannel ideas in the time it took to craft one",
+        "Localization at scale: adapt content for West African markets, dialects, and retail formats",
+        "Video & multimedia scripting for farmer education or consumer channels",
+        "Creative workflows that plug into existing approval chains and compliance policies"
       ],
       examples: [
-        "Generate 50 farmer education content variants across regional languages in 20 minutes",
-        "Create dealer-specific promotional materials with crop-specific localized messaging",
-        "Develop compliant product presentation decks with automated field trial data integration"
+        "Generate 50 social media variants for a Ghana rice push in under 20 minutes",
+        "Create retailer-specific sell-in decks with localized messaging and auto-updated data",
+        "Develop brand-compliant B2C launch kits with automated data pulls"
       ]
     },
     {
       title: "AI for Automation & Agents",
-      subtitle: "Building Intelligent Workflows",
+      subtitle: "Building intelligent workflows",
       icon: "🤖",
       color: "bg-green",
       topics: [
-        "Understanding AI agents: autonomous systems that work on your behalf",
-        "Workflow automation with AI: eliminate repetitive tasks completely",
-        "Data extraction and processing: from invoices to contracts to reports",
-        "Custom GPTs and assistants: building role-specific AI tools",
-        "Integration with existing systems: CRM, ERP, data warehouses",
-        "Governance and safety: ensuring AI agents operate within guardrails"
+        "What AI agents are and how they support sourcing, finance, or marketing teams",
+        "Workflow automation that eliminates repetitive tasks end-to-end",
+        "Data extraction pipelines for invoices, contracts, sustainability reports, or lab results",
+        "Custom GPTs & copilots built on Olam’s knowledge base and SOPs",
+        "Integrations with SAP, Salesforce, data warehouses, and collaboration tools",
+        "Governance: access controls, monitoring, and safety for autonomous workflows"
       ],
       examples: [
-        "Auto-generate agronomic trend summaries from field data and farmer feedback (saves 4-6 hours/week)",
-        "AI checklists for safe product usage and regulatory compliance: prevent compliance issues",
-        "Automated seed inventory optimization alerts based on seasonal demand patterns"
+        "Auto-generate ingredient or flavour trend summaries from consumer data (saves 4–6 hrs/week)",
+        "Create AI checklists for safe usage of brand assets across markets",
+        "Trigger predictive inventory or procurement alerts based on demand patterns"
       ]
     }
   ];
 
   const outcomes = [
-    "Everyone speaks the same AI vocabulary: critical for org-wide adoption and cross-functional collaboration across R&D, field operations, and commercial teams",
-    "Organizational confidence in safe and correct use: reduces shadow IT risks and ensures compliance with agricultural regulations and data governance policies",
-    "Immediate productivity lift based on industry benchmarks from leading agriculture and life sciences organizations",
-    "Established foundation for advanced AI adoption: teams understand when and how to leverage AI for agronomic research, field operations, and commercial workflows",
-    "Reduced resistance to change: participants see firsthand how AI augments rather than replaces agronomic and scientific expertise",
-    "Clear AI governance framework in place: policies, guidelines, and escalation paths for safe organizational use in regulated agricultural contexts"
+    "Everyone speaks the same AI vocabulary, enabling cross-functional collaboration from farm-gate to consumer",
+    "Organizational confidence in safe, correct usage of AI—reducing shadow IT and protecting data",
+    "Immediate productivity lift benchmarked against leading agri/FMCG enterprises",
+    "Clear understanding of where AI augments existing workflows versus future automation opportunities",
+    "Reduced resistance to change by showing teams evidence that AI amplifies (not replaces) expertise",
+    "An actionable governance framework: policies, playbooks, escalation paths, and champions"
   ];
 
   const prerequisites = [
     "Participants should have basic familiarity with Microsoft 365 or Google Workspace",
-    "Access to company email and collaboration tools during session",
-    "Willingness to share anonymized work scenarios for contextualization"
+    "Access to Olam email, chat, and collaboration tools during the sessions",
+    "Willingness to share anonymized scenarios from sourcing, operations, or marketing for contextualization"
   ];
 
   const successFactors = [
@@ -118,7 +117,7 @@ const Wave1 = () => {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-6">
             <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-1.5">
-              Foundation Program
+              AI Essentials · Module 1
             </Badge>
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">AI Essentials</h1>
@@ -128,8 +127,7 @@ const Wave1 = () => {
             <span className="text-lg">All Teams + Leadership</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            Foundation building program designed for immediate productivity gains. Learn the real AI landscape 
-            for enterprise agriculture operations: what works, what doesn't, and why it matters for Syngenta India.
+            Foundation-building program designed for immediate productivity gains. Learn the real AI landscape for enterprise agribusiness: what works, what doesn't, and why it matters for Olam’s global and Ghana operations.
           </p>
         </div>
       </section>
@@ -142,12 +140,11 @@ const Wave1 = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-3">Four Strategic Pillars</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Practical AI skills you can apply immediately to agricultural operations. 
-              Each segment includes hands-on exercises with agriculture and agritech-specific scenarios.
+              Practical AI skills teams can apply immediately. Each segment includes hands-on exercises with Olam- and Ghana-specific scenarios.
             </p>
           </div>
 
-          {/* Four Segments */}
+          {/* Segments */}
           {segments.map((segment, index) => (
             <Card key={index} className="border-0 shadow-xl overflow-hidden">
               <div className={`${segment.color} text-white p-6`}>
@@ -173,7 +170,7 @@ const Wave1 = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-foreground">Syngenta Use Cases</h3>
+                    <h3 className="text-xl font-bold mb-4 text-foreground">Olam Use Cases</h3>
                     <div className="space-y-4">
                       {segment.examples.map((example, idx) => (
                         <Card key={idx} className="border-l-4 border-primary bg-primary/5">

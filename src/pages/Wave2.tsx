@@ -7,97 +7,74 @@ import { Badge } from "@/components/ui/badge";
 const Wave2 = () => {
   const departments = [
     {
-      title: "Marketing Deep Dive",
+      title: "Ghana Marketing (B2C Transition)",
       icon: TrendingUp,
       focus: [
-        "AI for farmer education campaign planning: reduce development cycles",
-        "Farmer insights generation from unstructured data (feedback, field surveys, agronomic studies)",
-        "Content creation workflows that maintain Syngenta brand voice and regulatory compliance",
-        "Regional campaign frameworks with built-in measurement and learning loops"
+        "AI for consumer analytics: segmentation, persona creation, and purchase behavior analysis",
+        "Mapping the Ghanaian consumer journey (online/offline) to identify key touchpoints",
+        "AI-driven campaign planning: personalized digital marketing, channel mix optimization, and offer design",
+        "Social media sentiment analysis to understand brand perception and emerging trends"
       ],
-      metrics: "Faster campaign deployment with reduced creative iteration time for farmer outreach"
+      metrics: "Deliver a B2C Marketing AI Roadmap with KPIs for consumer acquisition and retention"
     },
     {
-      title: "Sales Deep Dive",
-      icon: ShoppingCart,
-      focus: [
-        "AI assistant for field territory plans: optimized routing and priority dealer/farmer accounts",
-        "Dealer-level micro-insights from inventory and sales data",
-        "Distributor analytics: identify stock-outs, seasonal demand patterns, and crop-specific opportunities",
-        "Structured field-call note automation for agronomists: capture, analyze, and share farmer interactions instantly"
-      ],
-      metrics: "Significant increase in effective field time and farmer interaction reporting efficiency"
-    },
-    {
-      title: "Finance Deep Dive",
-      icon: DollarSign,
-      focus: [
-        "AI-automated reconciliations with exception handling and audit trails",
-        "Commentary preparation for P&L review: variance analysis in natural language",
-        "Faster variance analysis: drill down from summary to transaction level",
-        "Predictive modelling for cash flow, demand, and budget scenarios"
-      ],
-      metrics: "Substantial reduction in month-end close time and faster variance resolution"
-    },
-    {
-      title: "Supply Chain Deep Dive",
+      title: "Supply Chain & Operations",
       icon: Truck,
       focus: [
-        "Seasonal demand forecasting with multi-variable inputs (weather patterns, crop cycles, regional planting trends)",
-        "Distribution optimization considering regional demand, seed health protocols, and priorities",
-        "Supplier risk intelligence: early warning system for agricultural input disruptions",
-        "Seed inventory optimization: identify slow-moving products and seasonal optimization opportunities"
+        "Demand forecasting at a consumer level to reduce stock-outs and waste",
+        "Logistics optimization from processing mills to distribution centers",
+        "AI for quality control and predictive maintenance in processing facilities",
+        "Supplier risk intelligence for packaging and other non-agri inputs"
       ],
-      metrics: "Improved seasonal forecast accuracy and reduced logistics costs for seed distribution"
+      metrics: "Improved forecast accuracy and reduced operational and logistics costs"
     },
     {
-      title: "Legal Deep Dive",
-      icon: AlertCircle,
-      focus: [
-        "AI-powered contract analysis and risk identification",
-        "Automated compliance monitoring and regulatory tracking",
-        "Legal research acceleration: case law, precedents, and regulatory updates",
-        "Document review and due diligence workflows with AI assistance"
-      ],
-      metrics: "Faster contract review cycles and enhanced compliance monitoring"
-    },
-    {
-      title: "IT Deep Dive",
+      title: "Sourcing & Farmer Analytics",
       icon: Users,
       focus: [
-        "AI for IT operations: automated incident detection and resolution",
-        "Code review and documentation generation with AI assistants",
-        "System performance optimization using predictive analytics",
-        "Security threat detection and response automation"
+        "Analyzing data from Olam's farmer network to improve sourcing efficiency",
+        "Yield prediction models based on historical data and environmental factors",
+        "Tools to support farmer engagement and sustainable sourcing initiatives",
+        "Data readiness assessment for sourcing and farm-gate operations"
       ],
-      metrics: "Reduced incident response time and improved system reliability"
+      metrics: "Enhanced sourcing efficiency and a clear data strategy for farmer-facing programs"
+    },
+    {
+      title: "Corporate Functions (Finance, HR, Legal)",
+      icon: DollarSign,
+      focus: [
+        "Finance: Automating reconciliations, P&L commentary, and variance analysis",
+        "HR: AI-powered tools for talent acquisition, personalized learning pathways, and capability mapping",
+        "Legal: Contract analysis, compliance monitoring, and risk identification with AI assistance",
+        "Cross-functional workflow automation to improve enterprise-wide efficiency"
+      ],
+      metrics: "Increased efficiency and data-driven decision-making in corporate functions"
     }
   ];
 
   const outcomes = [
-    "Team-level adoption with function-specific workflows embedded in daily operations: AI becomes part of the standard operating procedure",
-    "Efficiency gains measurable within 30 days (tracked through time-savings logs): quantifiable ROI on training investment with baseline comparison",
-    "Clear departmental AI roadmap with prioritized use cases and implementation timeline: 12-month plan with quick wins, medium-term goals, and transformational initiatives",
-    "Department-specific AI champions network established: peer-to-peer learning and support systems in place",
-    "Custom AI tool evaluation framework: teams can independently assess and adopt new AI solutions that fit their workflows",
-    "Reduced cross-functional friction: teams understand how AI impacts upstream and downstream processes, enabling better collaboration"
+    "A validated short-list of 2-3 high-impact pilot use-cases ready for the Prototype Sprint",
+    "A clear data-readiness roadmap, identifying current data sources, gaps, and necessary next steps",
+    "Departmental teams are equipped to champion their respective AI pilots",
+    "A detailed plan for the Ghana B2C Marketing AI pilot, including success metrics and a timeline",
+    "Cross-functional alignment on how AI can solve shared business challenges",
+    "An ROI framework for each proposed pilot project"
   ];
 
   const implementation = [
-    "Pre-session survey to identify department-specific pain points and priorities",
-    "Customized demos using sanitized Syngenta data structures (where possible) - field trial data, crop performance metrics, farmer feedback",
-    "Hands-on exercises with real agricultural workflow scenarios from each function",
-    "Post-session: 30-minute 1:1 consultation for each team lead to finalize adoption plan"
+    "Pre-session discovery workshops to understand functional pain points and priorities",
+    "Customized demos using sanitized Olam business scenarios (e.g., supply chain data, B2C marketing briefs)",
+    "Hands-on ideation and prioritization workshops with cross-functional teams",
+    "Post-session consultation to refine the pilot project charters and roadmaps"
   ];
 
   const whatMakesThisWork = [
-    "Department heads co-design the curriculum 2 weeks before sessions: ensures training addresses real pain points, not theoretical scenarios",
-    "Live troubleshooting of actual workflow challenges (not generic examples): participants bring real work to the session and leave with solutions",
-    "Tool selection based on your existing tech stack (not vendor-driven): maximizes adoption by building on familiar systems and interfaces",
-    "Focus on 'quick wins' that build momentum for larger transformations: achieving early success creates organizational enthusiasm for deeper change",
-    "Integration with existing change management frameworks: aligns with Syngenta India's current transformation initiatives and communication channels",
-    "Post-training reinforcement plan: follow-up sessions, office hours, and department-specific coaching for sustained behavior change",
-    "Measurement dashboard provided: track adoption rates, usage patterns, time savings, and business impact in real-time"
+    "Functional leads co-design the workshop agenda to ensure focus on real business problems",
+    "We facilitate a structured process for moving from broad ideas to concrete, feasible pilot plans",
+    "Focus on integrating with your existing technology and data infrastructure where possible",
+    "Emphasis on 'quick wins' that demonstrate value and build momentum for the Prototype Sprint",
+    "Alignment with Olam's overall strategic goals, including sustainability and innovation",
+    "A collaborative approach that builds internal ownership of the AI initiatives"
   ];
 
   return (
@@ -110,18 +87,17 @@ const Wave2 = () => {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-6">
             <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-1.5">
-              Functional Excellence
+              Module 2
             </Badge>
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">AI Deep Dive</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">Deep Dive & Discovery</h1>
           <div className="flex items-center justify-center gap-6 text-white/90 mb-4">
-            <span className="text-lg">2 sessions × 3 hours</span>
+            <span className="text-lg">Multi-session Workshops</span>
             <span className="text-white/50">•</span>
-            <span className="text-lg">Per Function</span>
+            <span className="text-lg">Cross-Functional Teams</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            Department-specific programs for Marketing, Sales, Finance, Supply Chain, R&D, and HR with metrics 
-            that matter to each agricultural function.
+            Collaborative workshops designed to identify and prioritize the highest-value AI use cases across Olam's key business functions, with a special focus on the Ghana B2C transition.
           </p>
         </div>
       </section>
@@ -132,9 +108,9 @@ const Wave2 = () => {
           
           {/* Functional Programs */}
           <div>
-            <h2 className="text-3xl font-bold mb-3 text-center">Functional Programs</h2>
+            <h2 className="text-3xl font-bold mb-3 text-center">Deep Dive Focus Areas</h2>
             <p className="text-muted-foreground mb-12 text-lg text-center max-w-3xl mx-auto">
-              Each program is tailored to the specific workflows, KPIs, and pain points of that department.
+              Each deep dive is tailored to the specific workflows, KPIs, and strategic priorities of that functional area.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {departments.map((dept, index) => {
@@ -168,39 +144,6 @@ const Wave2 = () => {
             </div>
           </div>
 
-          {/* HR & Learning */}
-          <Card className="border-0 shadow-lg bg-gradient-to-br from-muted/30 to-muted/10">
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
-                  <Users className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <CardTitle className="text-xl">HR & Learning Deep Dive</CardTitle>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Expected Impact: Accelerated hiring cycles and streamlined L&D content creation
-                  </p>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">AI-designed learning pathways for agronomists, field teams, and commercial roles personalized to career aspirations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Automated job description creation for specialized agriculture roles and evaluation rubrics aligned to Syngenta's competency frameworks</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Culture & capability intelligence from organizational knowledge, field feedback, and agronomic expertise patterns</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-
           {/* Implementation Approach */}
           <div>
             <h2 className="text-3xl font-bold mb-8">How We Make This Work</h2>
@@ -223,9 +166,9 @@ const Wave2 = () => {
           {/* What Makes This Different */}
           <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl">What Makes This Different</CardTitle>
+              <CardTitle className="text-2xl">Our Approach to Discovery</CardTitle>
               <p className="text-muted-foreground mt-2">
-                Not your typical "AI awareness" workshop: this is hands-on enablement
+                This is a structured, collaborative process to ensure we identify pilots that are both valuable and achievable.
               </p>
             </CardHeader>
             <CardContent>

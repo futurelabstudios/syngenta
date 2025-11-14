@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# Olam Group AI Enablement Microsite
 
-## Project info
+This repository powers the marketing microsite for **Futurelab Studios' AI enablement partnership with Olam Group and Olam Agri Ghana**. The site outlines the modular program (Executive Briefing & AI Foundations → Deep Dive & Discovery → Prototype Sprint & Scaling), highlights the facilitators, and lists pricing for the Essentials and Deepdive packages.
 
-**URL**: https://lovable.dev/projects/bf775de2-2150-4ad8-8ff5-64a766b06bc7
+- **Live codebase:** https://github.com/futurelabstudios/olam  
+- **Primary contact:** futurelab.ai@gmail.com
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- [Vite](https://vitejs.dev/) + [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) component primitives
+- [Radix UI](https://www.radix-ui.com/) foundations for accessible interactions
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf775de2-2150-4ad8-8ff5-64a766b06bc7) and start prompting.
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/futurelabstudios/olam.git
+   cd olam
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start the dev server**
+   ```bash
+   npm run dev
+   ```
+   Vite will provide a local URL with hot-module reloading.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Available Scripts
 
-**Use your preferred IDE**
+| Command        | Description                                |
+| -------------- | ------------------------------------------ |
+| `npm run dev`  | Start the Vite development server          |
+| `npm run build`| Build the production bundle                |
+| `npm run lint` | Run ESLint across the codebase             |
+| `npm run preview` | Preview the production build locally   |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Deployment
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The site outputs a static bundle via `npm run build`. Deploy the `dist/` folder to any static hosting provider (Vercel, Netlify, Cloudflare Pages, GitHub Pages, etc.). Remember to set the canonical URL and environment-specific metadata if you duplicate the site for other markets.
 
-Follow these steps:
+## Contributing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Create a feature branch from `main`.
+2. Make changes + add tests/QA notes if applicable.
+3. Run `npm run lint` and `npm run build` before opening a pull request.
+4. Submit a PR pointing to `main`.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bf775de2-2150-4ad8-8ff5-64a766b06bc7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For questions or partnership requests, reach out to **futurelab.ai@gmail.com**.

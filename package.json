@@ -1,8 +1,18 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "olam-ai-enablement",
+  "description": "Futurelab Studios AI enablement microsite for Olam Group and Olam Agri Ghana.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Futurelab Studios <futurelab.ai@gmail.com>",
+  "homepage": "https://github.com/futurelabstudios/olam#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futurelabstudios/olam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/futurelabstudios/olam/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

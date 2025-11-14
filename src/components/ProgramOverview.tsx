@@ -7,61 +7,57 @@ const ProgramOverview = () => {
   const waves = [
     {
       id: 1,
-      title: "AI Essentials",
-      subtitle: "Foundation for All Teams",
+      title: "Executive Briefing & AI Foundations",
+      subtitle: "Strategy Alignment for Leadership & Teams",
       icon: Crown,
-      participants: "All Teams including Leadership",
-      duration: "2 Sessions × 3 Hours",
-      schedule: "Foundation building for organization-wide adoption",
+      participants: "C-Suite, Global & Ghana Leadership, Mid-management",
+      duration: "Customizable Sessions",
+      schedule: "Aligning on a shared vision and building core AI literacy",
       focus: [
-        "The real AI landscape for agriculture & agritech: what matters, what doesn't",
-        "Everyday productivity stack (Docs, Sheets, Email, Research, Comms)",
-        "Data privacy, regulatory compliance, and safety protocols",
-        "Cross-functional agriculture industry use cases",
-        "Auto-generating agronomic trend summaries from field data",
-        "Automating weekly crop performance reports & farmer visit summaries"
+        "AI's impact on the global agri-business value chain",
+        "Aligning AI with Olam’s Purpose and sustainability agenda",
+        "Data landscape in agriculture, from farm-gate to consumer",
+        "High-potential use cases in supply chain, sourcing, and B2C marketing"
       ],
-      outcome: "Everyone speaks the same AI vocabulary | Immediate productivity gains",
+      outcome: "Shared AI vision | Prioritised use-case domains",
       color: "bg-primary",
       accentColor: "border-l-4 border-secondary",
       href: "/wave-1"
     },
     {
       id: 2,
-      title: "AI Deep Dive",
-      subtitle: "Functional Excellence Programs",
+      title: "Deep Dive & Discovery",
+      subtitle: "Unlocking Functional Excellence",
       icon: Building2,
-      participants: "Department-Specific Teams",
-      duration: "2 Sessions × 3 Hours per Function",
-      schedule: "Marketing, Sales, Finance, Supply Chain, HR",
+      participants: "Cross-functional teams (Sourcing, Ops, Marketing)",
+      duration: "Multi-session Workshops",
+      schedule: "Ideation and planning for high-impact AI pilots",
       focus: [
-        "Marketing: Campaign planning, farmer insights, localized content workflows",
-        "Sales: AI assistant for territory planning, dealer insights, distributor analytics",
-        "Finance: Automated reconciliations, P&L commentary, variance analysis",
-        "Supply Chain: Demand forecasting, seed health tracking, supplier risk intelligence",
-        "HR: Learning pathways, job descriptions, capability intel"
+        "Ghana Marketing (B2C): Consumer segmentation, personalised marketing",
+        "Supply Chain: Demand forecasting, logistics optimisation",
+        "Sourcing: Farmer analytics, yield prediction, quality control",
+        "Data Readiness: Assessing data sources, governance, and tech stack"
       ],
-      outcome: "Team-level adoption | Efficiency gains measurable within 30 days",
+      outcome: "A validated short-list of 2-3 pilot use-cases | Data-readiness roadmap",
       color: "bg-accent",
       accentColor: "border-l-4 border-orange",
       href: "/wave-2"
     },
     {
       id: 3,
-      title: "AI Builders Program",
-      subtitle: "Prototyping & Custom Solutions",
+      title: "Prototype Sprint & Scaling",
+      subtitle: "From Pilot to Enterprise Capability",
       icon: Globe,
-      participants: "Cross-Functional Teams",
+      participants: "Selected pilot teams + Futurelab engineers",
       duration: "2-6 Weeks Sprint",
-      schedule: "Enablement + Prototyping Sprint",
+      schedule: "Building a live solution and a plan for enterprise adoption",
       focus: [
-        "AI Agronomy Assistant trained on Syngenta crop protection protocols and field planning",
-        "Research intelligence bot reading past seed trials, lab reports & agronomic studies",
-        "Finance autopilot for month-end closings",
-        "Internal knowledge search agent for commercial and field teams",
-        "Custom GPT powered by Syngenta product guidelines & safety protocols"
+        "Rapidly build a Proof-of-Concept for a high-priority use case",
+        "Example Pilot (Ghana B2C): A customer segmentation tool",
+        "Example Pilot (Supply Chain): A demand forecasting model",
+        "Building a governance model and roadmap for scaling AI across Olam"
       ],
-      outcome: "Working prototypes | Deployment readiness | Repeatable AI operating model",
+      outcome: "A live prototype ready for deployment | A roadmap for enterprise adoption",
       color: "bg-green",
       accentColor: "border-l-4 border-secondary",
       href: "/wave-3"
@@ -73,13 +69,10 @@ const ProgramOverview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Program Options
+            An AI Enablement Journey
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three tailored programs designed to build AI capability across Syngenta India: from 
-            foundation building to functional excellence to custom prototyping. Each program 
-            combines proven adult learning principles, hands-on practice, and real-world agriculture 
-            scenarios to ensure knowledge transfer and sustainable adoption.
+            A modular program to build AI capability across Olam, from strategic alignment to hands-on prototyping. Each stage is tailored to Olam's unique value chain, supporting key priorities like the B2C transition in Ghana, supply chain resilience, and sustainable sourcing.
           </p>
         </div>
 

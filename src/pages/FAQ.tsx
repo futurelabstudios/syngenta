@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Users, TrendingUp, Brain, Target, CheckCircle, Globe, Zap, Building, Lock } from "lucide-react";
+import { Shield, Users, TrendingUp, Brain, Target, CheckCircle, Globe, Zap, Building, Lock, Truck } from "lucide-react";
 
 const FAQ = () => {
   const categories = [
@@ -46,12 +46,12 @@ const FAQ = () => {
       color: "bg-secondary",
       faqs: [
         {
-          question: "Can we build our own Syngenta-specific AI assistant?",
-          answer: "Absolutely. Under the AI Builders program, we can create:\n\n• Internal custom GPT for agronomic queries\n• Agricultural knowledge search bot\n• Field & farmer advisory assistant\n• Research intelligence agent (seed trials, lab data)\n• Seasonal demand forecasting support assistant\n\nTrained securely on your agricultural documents, protocols & workflows."
+          question: "Can we build our own Olam-specific AI assistant?",
+          answer: "Absolutely. The Prototype Sprint is designed to build custom solutions like:\n\n• A customer segmentation tool for the Ghana B2C marketing team\n• A demand forecasting model for supply chain optimization\n• A sourcing analytics tool to predict farmer yields\n• An internal knowledge assistant trained securely on Olam's operational guidelines, market intelligence, and sustainability reports."
         },
         {
-          question: "Can your team help craft a long-term AI strategy for Syngenta India?",
-          answer: "Yes, our Discover → Design → Drive → Deliver framework is ideally suited to helping Syngenta India establish a 12-24 month roadmap for adoption, prototyping, tools, governance, skills, and change management tailored to agricultural operations."
+          question: "Can your team help craft a long-term AI strategy for Olam?",
+          answer: "Yes, our program is designed to deliver a strategic AI roadmap. We help you establish a 12-24 month plan covering pilot projects, enterprise scaling, technology choices, governance, skills development, and change management tailored to Olam's global operations."
         }
       ]
     },
@@ -61,8 +61,8 @@ const FAQ = () => {
       color: "bg-orange",
       faqs: [
         {
-          question: "What's the ROI of AI training?",
-          answer: "AI literacy & adoption typically delivers:\n\n• Significant productivity lift organisation-wide (R&D, field operations, commercial)\n• Faster turnarounds in agronomic research, farmer insights & field analytics teams\n• Substantial reduction in repetitive tasks (report generation, data synthesis, field documentation)\n• Improved speed of agricultural insights, agronomic decision quality, and strategic agility\n\nFor a company of Syngenta India's scale and complexity, these translate into substantial efficiency gains annually across agriculture operations."
+          question: "What's the ROI of this program?",
+          answer: "The ROI is measured through:\n\n• Efficiency Gains: Significant productivity lift across the value chain, from sourcing to corporate functions, by automating repetitive tasks.\n• Cost Reduction: Improved forecasting and logistics planning to reduce waste, stock-outs, and operational overhead.\n• Revenue Growth: For the Ghana B2C business, AI-driven marketing can directly impact consumer acquisition, retention, and sales.\n• Strategic Agility: Faster, data-driven decision-making in response to market changes.\n\nFor a global leader like Olam, these benefits translate into substantial and sustainable financial impact."
         }
       ]
     },
@@ -73,11 +73,11 @@ const FAQ = () => {
       faqs: [
         {
           question: "We already use Microsoft/Google internally. Will this training integrate?",
-          answer: "100%. We customize workflows for Microsoft 365 Copilot, Google Workspace, Power BI, Looker, Salesforce, Tableau, and internal data sources. The training adapts to your tech stack, not the other way around."
+          answer: "100%. We customize workflows for your existing tech stack, whether it's Microsoft 365, Google Workspace, SAP, or other internal data systems. The training adapts to your technology, not the other way around."
         },
         {
-          question: "Can you show real examples from agriculture and agritech?",
-          answer: "Yes, no hypotheticals. We demonstrate agriculture-relevant workflows including:\n\n• Farmer and field insights\n• Crop and regional segmentation\n• Seed health and trial data analysis\n• Agronomic report summarization\n• Farmer outreach campaign ideas\n• Competitive crop protection intelligence\n• Financial reconciliations\n• Dealer network and distribution planning"
+          question: "Can you show real examples from the food and agri-business sector?",
+          answer: "Yes, all our examples are tailored. We demonstrate relevant workflows, including:\n\n• Consumer segmentation for B2C brands\n• Commodity price trend analysis\n• Supply chain and logistics optimization\n• Farmer network data analysis\n• Sustainability report summarization\n• Financial reconciliation automation"
         }
       ]
     }
@@ -86,59 +86,42 @@ const FAQ = () => {
   const departmentBenefits = [
     {
       icon: Target,
-      title: "Marketing",
+      title: "Marketing (Ghana B2C)",
       benefits: [
-        "Hyperlocal farmer education campaign planning using generative research",
-        "AI-driven farmer sentiment intelligence across regions and crops",
-        "Rapid multi-language content creation for farmer outreach",
-        "Early warning systems for agronomic trend shifts"
+        "Hyper-personalize consumer campaigns for brands like 'Mama Gold'",
+        "Gain deep consumer insights from sales and social media data",
+        "Optimize channel mix and marketing spend for higher ROI",
+        "Accelerate new product ideation based on emerging trends"
       ]
     },
     {
-      icon: TrendingUp,
-      title: "Sales & Commercial",
+      icon: Truck,
+      title: "Supply Chain & Operations",
       benefits: [
-        "AI copilots for daily field visits, territory planning, and farmer advisory",
-        "Predictive seasonal demand estimation with weather and crop cycle variables",
-        "Product presentation generation customized to crops, regions, and dealer networks"
-      ]
-    },
-    {
-      icon: Building,
-      title: "Supply Chain & Seed Operations",
-      benefits: [
-        "AI-enabled seasonal demand forecasting for seed distribution",
-        "Risk scenario modelling (weather, crop failures, supply disruptions)",
-        "Automated seed health tracking, inventory optimization, and executive dashboards"
-      ]
-    },
-    {
-      icon: CheckCircle,
-      title: "Finance",
-      benefits: [
-        "Month-end closures support",
-        "Automated reconciliations",
-        "Forecasting precision improvement",
-        "Zero-error financial summaries"
+        "Improve demand forecasting accuracy to reduce waste and stock-outs",
+        "Optimize logistics from processing mills to distribution centers",
+        "Implement predictive maintenance in facilities to minimize downtime",
+        "Enhance quality control with AI-powered analysis"
       ]
     },
     {
       icon: Users,
-      title: "HR & Learning",
+      title: "Sourcing & Farmer Analytics",
       benefits: [
-        "AI-designed learning pathways for agronomists and field teams",
-        "Automated job description creation for specialized agriculture roles",
-        "Culture & capability intel from agronomic expertise and org knowledge"
+        "Enhance sourcing efficiency with predictive yield analytics",
+        "Improve farmer engagement with data-driven support tools",
+        "Strengthen sustainable sourcing initiatives with better data monitoring",
+        "Gain a clearer view of the entire upstream supply chain"
       ]
     },
     {
-      icon: Zap,
-      title: "Leadership & Strategy",
+      icon: Building,
+      title: "Corporate Functions (Finance, HR, Legal)",
       benefits: [
-        "Navigating AI regulation",
-        "Governance frameworks",
-        "Decision-making aids",
-        "Transformational use-case identification"
+        "Automate financial reporting, reconciliations, and analysis",
+        "Streamline talent acquisition and create personalized L&D pathways in HR",
+        "Accelerate contract review and compliance monitoring in Legal",
+        "Drive enterprise-wide efficiency through workflow automation"
       ]
     }
   ];
@@ -156,8 +139,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Answers to key questions from capability managers and leadership teams about 
-            AI enablement at Syngenta India
+            Answers to key questions for leadership teams about AI enablement at Olam.
           </p>
         </div>
       </section>
@@ -167,14 +149,14 @@ const FAQ = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              Why This Program Is Relevant to Syngenta India
+              How This Program Drives Olam's Strategic Priorities
             </h2>
             <p className="text-base text-muted-foreground max-w-3xl mx-auto">
-              Tailored around Syngenta India's priorities across all key departments and agricultural operations
+              The program is tailored to Olam's value chain, from sourcing and supply chain to the B2C market transition in Ghana.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
             {departmentBenefits.map((dept, index) => {
               const IconComponent = dept.icon;
               return (
@@ -255,7 +237,7 @@ const FAQ = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              Why Futurelab Studios Is a Fit for Syngenta India
+              Why Futurelab Studios Is the Right Partner for Olam
             </h2>
           </div>
 
@@ -275,8 +257,8 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
                   <Building className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-bold text-sm mb-1">Agriculture & Enterprise Expertise</h3>
-                <p className="text-muted-foreground text-xs">Deep experience across agriculture, life sciences, FMCG, consulting, and enterprise technology</p>
+                <h3 className="font-bold text-sm mb-1">Agri-Business & FMCG Expertise</h3>
+                <p className="text-muted-foreground text-xs">Deep experience across the end-to-end value chain, from sourcing and processing to consumer brands.</p>
               </CardContent>
             </Card>
 
@@ -306,7 +288,7 @@ const FAQ = () => {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-bold text-sm mb-1">Proven Team</h3>
-                <p className="text-muted-foreground text-xs">Founders with experience at leading enterprises: FMCG, Mondelez, Airtel, Google, and agritech ventures</p>
+                <p className="text-muted-foreground text-xs">Founders with leadership experience at top-tier FMCG, technology, and agri-business related companies.</p>
               </CardContent>
             </Card>
 

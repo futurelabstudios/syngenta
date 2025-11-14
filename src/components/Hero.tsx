@@ -25,16 +25,16 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6 md:mb-8">
               <img 
-                src="/images/Syngenta Logo" 
-                alt="Syngenta Logo" 
-                className="h-16 md:h-20 lg:h-24 w-auto"
+                src="/images/Olam%20Logo.jpg" 
+                alt="Olam Logo" 
+                className="h-20 md:h-24 lg:h-28 w-auto drop-shadow-2xl"
               />
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8 text-white">
-              Future Ready{" "}
-              <span className="text-white block mt-2">
-                Syngenta India
+              Future Ready Olam
+              <span className="text-white/90 block mt-2 text-2xl md:text-3xl">
+                AI enablement for global agriculture & Ghana's B2C leap
               </span>
             </h1>
             
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Enterprise AI Enablement & Capability Building for Syngenta India's science-driven agriculture operations.
+              An AI enablement partnership to accelerate innovation across Olam's global food and agri-business value chain.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 group bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 backdrop-blur-sm w-full sm:w-auto" asChild>
@@ -72,8 +72,8 @@ const Hero = () => {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
                   <Zap className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">3 Strategic Programs</h3>
-                <p className="text-sm md:text-base text-white/90">AI Essentials → Deep Dive → Builders</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">End-to-End Value Chain</h3>
+                <p className="text-sm md:text-base text-white/90">From farm-gate sourcing to consumer brands</p>
               </CardContent>
             </Card>
             
@@ -82,8 +82,8 @@ const Hero = () => {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
                   <Users className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">All Departments</h3>
-                <p className="text-sm md:text-base text-white/90">Marketing, Sales, Finance, Supply Chain, HR, Legal, IT</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">For Olam Agri & ofi</h3>
+                <p className="text-sm md:text-base text-white/90">Tailored programs for your distinct operating groups</p>
               </CardContent>
             </Card>
             
@@ -92,8 +92,8 @@ const Hero = () => {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
                   <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Industry Excellence</h3>
-                <p className="text-sm md:text-base text-white/90">Tailored for agriculture and agritech leadership</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Purpose-Driven AI</h3>
+                <p className="text-sm md:text-base text-white/90">Aligning technology with your sustainability and innovation goals</p>
               </CardContent>
             </Card>
           </div>

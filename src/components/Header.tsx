@@ -33,17 +33,17 @@ const Header = () => {
         <div className="flex justify-between items-center h-14 md:h-16">
           <div className="flex items-center space-x-3 md:space-x-6">
             <Link to="/" className="flex items-center">
-              <div className="bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-lg">
+              <div className="bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-lg shadow-lg">
                 <img 
-                  src="/images/Syngenta Logo" 
-                  alt="Syngenta" 
-                  className="h-6 md:h-8 w-auto"
+                  src="/images/Olam%20Logo.jpg" 
+                  alt="Olam Group" 
+                  className="h-8 md:h-10 w-auto"
                 />
               </div>
             </Link>
             <div className="hidden lg:flex items-center space-x-3 pl-6 border-l border-white/20">
               <span className="text-white/80 text-xs md:text-sm font-medium whitespace-nowrap">
-                AI Enablement Program
+                Future Ready Olam · AI Enablement Program
               </span>
             </div>
           </div>
@@ -61,8 +61,11 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <div className="md:hidden flex items-center gap-2">
+            <span className="text-[11px] uppercase tracking-wide text-white/80 animate-pulse">
+              Tap menu for program details
+            </span>
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle navigation menu">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
