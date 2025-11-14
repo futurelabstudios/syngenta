@@ -39,12 +39,7 @@ const Hero = () => {
             </h1>
             
             <div className="mb-6 md:mb-8 flex justify-center lg:justify-start">
-              <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-6 py-2.5 md:py-3 shadow-xl">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-orange rounded-full"></div>
-                </div>
+              <div className="inline-flex items-center bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-5 py-2 md:py-2.5 shadow-xl">
                 <span className="text-sm md:text-base font-semibold text-white tracking-wide">
                   A complete AI Enablement Program, powered by Futurelab Studios
                 </span>
