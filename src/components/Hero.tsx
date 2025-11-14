@@ -31,6 +31,15 @@ const Hero = () => {
               />
             </div>
 
+            <div className="mb-4 md:mb-6">
+              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-sm md:text-base font-medium text-white/90 tracking-wide">
+                  AI Enablement Proposal by Futurelab Studios
+                </span>
+              </div>
+            </div>
+
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 text-white">
               Future Ready{" "}
               <span className="text-white block mt-2">
