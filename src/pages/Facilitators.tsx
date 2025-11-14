@@ -13,7 +13,7 @@ const Facilitators = () => {
       experience: "",
       image: "/images/Shabbir Haider.jpeg",
       background: "bg-gradient-primary",
-      description: "Shabbir Haider is the founder of Futurelab Studios, an AI enablement and innovation company helping organizations adopt AI meaningfully.",
+      description: "",
       details: [
         "Extensive experience across business strategy and technology transformation",
         "Alumni of leading FMCG companies including PepsiCo, Mondelez, and Amul",
@@ -30,7 +30,7 @@ const Facilitators = () => {
       experience: "",
       image: "/images/Kuntal Sharma.png",
       background: "bg-gradient-secondary",
-      description: "Kuntal Sharma is a marketing and growth leader with extensive experience across leading brands and the co-founder of Futurelab Studios.",
+      description: "",
       details: [
         "Extensive experience in marketing and growth with leading brands",
         "Experience with Google, Paytm, Airtel & Amul",
@@ -185,7 +185,7 @@ const Facilitators = () => {
                   <h3 className="text-2xl font-bold mb-6">Our Impact</h3>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="text-center">
-                      <div className="text-4xl font-bold mb-2">100+</div>
+                      <div className="text-4xl font-bold mb-2">150+</div>
                       <div className="text-white/80">AI Enablement Workshops</div>
                     </div>
                     <div className="text-center">
