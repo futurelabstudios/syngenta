@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Brain, Zap, Package } from "lucide-react";
-
+import { ArrowRight, Zap, Users, Target, UserCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return <section className="relative bg-gradient-hero text-white py-16 md:py-24 lg:py-32 overflow-hidden">
       {/* Modern Ambient Background */}
@@ -23,29 +23,49 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-8 md:mb-12">
-              <div className="bg-white px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-lg">
+              <div className="flex items-center justify-center lg:justify-start mb-6 md:mb-8">
                 <img 
-                  src="/images/IMMPL Logo.jpeg" 
-                  alt="IMMPL" 
-                  className="h-16 md:h-24 w-auto"
+                  src="/images/Syngenta Logo.png" 
+                  alt="Syngenta Logo" 
+                  className="h-16 md:h-20 lg:h-24 w-auto"
                 />
-              </div>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8 text-white">
-              Fractional CTO + AI Enablement Program
+              Future Ready{" "}
+              <span className="text-white block mt-2">
+                Syngenta India
+              </span>
             </h1>
+            
+            <div className="mb-6 md:mb-8 flex justify-center lg:justify-start">
+              <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-6 py-2.5 md:py-3 shadow-xl">
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-orange rounded-full"></div>
+                </div>
+                <span className="text-sm md:text-base font-semibold text-white tracking-wide">
+                  A complete AI Enablement Program, powered by Futurelab Studios
+                </span>
+              </div>
+            </div>
 
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Training + custom AI tools built and shipped monthly
+              Enterprise AI Enablement & Capability Building for Syngenta India's science-driven agriculture operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 group bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 backdrop-blur-sm w-full sm:w-auto" asChild>
                 <a href="#program-overview">
-                  Program Details
+                  Workshop Details
                   <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
+              </Button>
+              <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 bg-white text-primary hover:bg-white/90 font-bold w-full sm:w-auto" asChild>
+                <Link to="/facilitators">
+                  <UserCheck className="mr-2 h-4 md:h-5 w-4 md:w-5" />
+                  Facilitators
+                </Link>
               </Button>
             </div>
           </div>
@@ -55,30 +75,30 @@ const Hero = () => {
             <Card className="bg-white/15 border-white/30 backdrop-blur-md hover:bg-white/20 transition-all duration-300 group shadow-xl">
               <CardContent className="p-5 md:p-6 text-center">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
-                  <Brain className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                  <Zap className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Deep-Dive Training</h3>
-                <p className="text-sm md:text-base text-white/90">Function-specific AI methods & hands-on upskilling</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">3 Strategic Programs</h3>
+                <p className="text-sm md:text-base text-white/90">AI Essentials → Deep Dive → Builders</p>
               </CardContent>
             </Card>
             
             <Card className="bg-white/15 border-white/30 backdrop-blur-md hover:bg-white/20 transition-all duration-300 group shadow-xl">
               <CardContent className="p-5 md:p-6 text-center">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
-                  <Zap className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                  <Users className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">AI Adoption & Tools</h3>
-                <p className="text-sm md:text-base text-white/90">Curated toolstack & workflow automation</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">All Departments</h3>
+                <p className="text-sm md:text-base text-white/90">Marketing, Sales, Finance, Supply Chain, HR, Legal, IT</p>
               </CardContent>
             </Card>
             
             <Card className="bg-white/15 border-white/30 backdrop-blur-md sm:col-span-2 hover:bg-white/20 transition-all duration-300 group shadow-xl">
               <CardContent className="p-5 md:p-6 text-center">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform shadow-lg">
-                  <Package className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                  <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">AI Build Program</h3>
-                <p className="text-sm md:text-base text-white/90">Custom AI tools built by CTO-led team & shipped to production</p>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Industry Excellence</h3>
+                <p className="text-sm md:text-base text-white/90">Tailored for agriculture and agritech leadership</p>
               </CardContent>
             </Card>
           </div>

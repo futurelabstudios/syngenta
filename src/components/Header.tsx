@@ -9,14 +9,20 @@ const Header = () => {
     name: "Home",
     href: "/"
   }, {
-    name: "AI Deep-Dive Training",
-    href: "/ai-deep-dive"
+    name: "AI Essentials",
+    href: "/wave-1"
   }, {
-    name: "AI Build Program",
-    href: "/ai-build"
+    name: "AI Deep Dive",
+    href: "/wave-2"
   }, {
-    name: "Team",
-    href: "/team"
+    name: "AI Builders",
+    href: "/wave-3"
+  }, {
+    name: "Facilitators",
+    href: "/facilitators"
+  }, {
+    name: "FAQ",
+    href: "/faq"
   }, {
     name: "Pricing",
     href: "/pricing"
@@ -27,17 +33,17 @@ const Header = () => {
         <div className="flex justify-between items-center h-14 md:h-16">
           <div className="flex items-center space-x-3 md:space-x-6">
             <Link to="/" className="flex items-center">
-              <div className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg shadow-lg">
+              <div className="bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-lg">
                 <img 
-                  src="/images/IMMPL Logo.jpeg" 
-                  alt="IMMPL" 
-                  className="h-8 md:h-12 w-auto"
+                  src="/images/Syngenta Logo.png" 
+                  alt="Syngenta" 
+                  className="h-6 md:h-8 w-auto"
                 />
               </div>
             </Link>
             <div className="hidden lg:flex items-center space-x-3 pl-6 border-l border-white/20">
               <span className="text-white/80 text-xs md:text-sm font-medium whitespace-nowrap">
-                AI Enablement Program · Futurelab Studios
+                AI Enablement Program
               </span>
             </div>
           </div>
@@ -55,11 +61,8 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center gap-2">
-            <span className="text-[11px] uppercase tracking-wide text-white/80 animate-pulse">
-              Menu
-            </span>
-            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle navigation menu">
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
