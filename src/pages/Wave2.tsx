@@ -1,80 +1,115 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, BarChart3, FileText, Users, Zap, AlertCircle } from "lucide-react";
+import { CheckCircle, TrendingUp, ShoppingCart, DollarSign, Truck, Users, AlertCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Wave2 = () => {
   const departments = [
     {
-      title: "Advisory & Wealth Management",
-      icon: BarChart3,
+      title: "R&D & Agronomy Deep Dive",
+      icon: TrendingUp,
       focus: [
-        "AI-powered portfolio analysis: market trends, risk assessment, optimization opportunities",
-        "Client communication: automated summaries, recommendations, personalized insights",
-        "Market research automation: competitive intelligence, economic indicators, investment ideas",
-        "Due diligence and document analysis for new opportunities"
+        "AI-accelerated seed trial analysis: automate data extraction from multi-location field trials",
+        "Predictive crop performance modeling: leverage historical data to forecast variety success rates",
+        "Automated research report generation: transform raw lab data into publication-ready insights",
+        "Literature review acceleration: AI-powered synthesis of global agronomic research papers",
+        "Anomaly detection in seed health data: identify quality issues before they reach the market"
       ],
-      metrics: "AI-powered advisory tools integrated into daily workflows"
+      metrics: "50% faster trial analysis cycle time | 10x speed in literature review for R&D"
     },
     {
-      title: "Operations & Trading",
-      icon: Zap,
+      title: "Marketing Deep Dive",
+      icon: TrendingUp,
       focus: [
-        "Workflow automation: trade execution, settlement, reconciliation",
-        "Data pipeline optimization: real-time market feeds, portfolio updates",
-        "Risk monitoring: automated alerts, compliance checks, audit trails",
-        "Predictive analytics for market movements and client behavior"
+        "AI for farmer education campaign planning: reduce development cycles",
+        "Farmer insights generation from unstructured data (feedback, field surveys, agronomic studies)",
+        "Content creation workflows that maintain Syngenta brand voice and regulatory compliance",
+        "Regional campaign frameworks with built-in measurement and learning loops"
       ],
-      metrics: "Operational efficiency gains and reduced manual processes"
+      metrics: "Faster campaign deployment with reduced creative iteration time for farmer outreach"
     },
     {
-      title: "Finance & Administration",
-      icon: FileText,
+      title: "Sales Deep Dive",
+      icon: ShoppingCart,
       focus: [
-        "Financial reporting automation: P&L summaries, variance analysis, forecasting",
-        "Invoice and expense processing: automated extraction, categorization, approval",
-        "Reconciliation workflows: automated matching, anomaly detection",
-        "Budget forecasting with AI-assisted scenario modeling"
+        "AI assistant for field territory plans: optimized routing and priority dealer/farmer accounts",
+        "Dealer-level micro-insights from inventory and sales data",
+        "Distributor analytics: identify stock-outs, seasonal demand patterns, and crop-specific opportunities",
+        "Structured field-call note automation for agronomists: capture, analyze, and share farmer interactions instantly"
       ],
-      metrics: "Finance team productivity improvement and faster reporting cycles"
+      metrics: "Significant increase in effective field time and farmer interaction reporting efficiency"
     },
     {
-      title: "Human Resources & Talent",
+      title: "Finance Deep Dive",
+      icon: DollarSign,
+      focus: [
+        "AI-automated reconciliations with exception handling and audit trails",
+        "Commentary preparation for P&L review: variance analysis in natural language",
+        "Faster variance analysis: drill down from summary to transaction level",
+        "Predictive modelling for cash flow, demand, and budget scenarios"
+      ],
+      metrics: "Substantial reduction in month-end close time and faster variance resolution"
+    },
+    {
+      title: "Supply Chain Deep Dive",
+      icon: Truck,
+      focus: [
+        "Seasonal demand forecasting with multi-variable inputs (weather patterns, crop cycles, regional planting trends)",
+        "Distribution optimization considering regional demand, seed health protocols, and priorities",
+        "Supplier risk intelligence: early warning system for agricultural input disruptions",
+        "Seed inventory optimization: identify slow-moving products and seasonal optimization opportunities"
+      ],
+      metrics: "Improved seasonal forecast accuracy and reduced logistics costs for seed distribution"
+    },
+    {
+      title: "Legal Deep Dive",
+      icon: AlertCircle,
+      focus: [
+        "AI-powered contract analysis and risk identification",
+        "Automated compliance monitoring and regulatory tracking",
+        "Legal research acceleration: case law, precedents, and regulatory updates",
+        "Document review and due diligence workflows with AI assistance"
+      ],
+      metrics: "Faster contract review cycles and enhanced compliance monitoring"
+    },
+    {
+      title: "IT Deep Dive",
       icon: Users,
       focus: [
-        "AI-powered recruitment: CV screening, candidate matching, interview preparation",
-        "Learning & development: personalized learning paths, skill assessments, training recommendations",
-        "Talent analytics: capability mapping, succession planning, retention insights",
-        "HR communication and documentation automation"
+        "AI for IT operations: automated incident detection and resolution",
+        "Code review and documentation generation with AI assistants",
+        "System performance optimization using predictive analytics",
+        "Security threat detection and response automation"
       ],
-      metrics: "Improved talent acquisition and development efficiency"
+      metrics: "Reduced incident response time and improved system reliability"
     }
   ];
 
   const outcomes = [
-    "A validated short-list of 2-3 high-impact pilot use-cases ready for development",
-    "A clear integration roadmap identifying tools, data sources, and technical requirements",
-    "Departmental teams equipped to champion their respective AI pilots",
-    "Detailed specifications for custom tools and automation workflows",
-    "Cross-functional alignment on AI adoption strategy and priorities",
-    "An ROI framework for each proposed AI tool with success metrics"
+    "Team-level adoption with function-specific workflows embedded in daily operations: AI becomes part of the standard operating procedure",
+    "Efficiency gains measurable within 30 days (tracked through time-savings logs): quantifiable ROI on training investment with baseline comparison",
+    "Clear departmental AI roadmap with prioritized use cases and implementation timeline: 12-month plan with quick wins, medium-term goals, and transformational initiatives",
+    "Department-specific AI champions network established: peer-to-peer learning and support systems in place",
+    "Custom AI tool evaluation framework: teams can independently assess and adopt new AI solutions that fit their workflows",
+    "Reduced cross-functional friction: teams understand how AI impacts upstream and downstream processes, enabling better collaboration"
   ];
 
   const implementation = [
-    "Pre-session discovery workshops to understand functional pain points and current workflows",
-    "Customized demos using sanitized IMMPL business scenarios",
-    "Hands-on ideation and prioritization workshops with team representatives",
-    "Post-session consultation to refine specifications and development roadmap"
+    "Pre-session survey to identify department-specific pain points and priorities",
+    "Customized demos using sanitized Syngenta data structures (where possible) - field trial data, crop performance metrics, farmer feedback",
+    "Hands-on exercises with real agricultural workflow scenarios from each function",
+    "Post-session: 30-minute 1:1 consultation for each team lead to finalize adoption plan"
   ];
 
   const whatMakesThisWork = [
-    "Functional leads co-design the workshop agenda to ensure focus on real business problems",
-    "Structured process for moving from broad ideas to concrete, buildable pilot plans",
-    "Focus on integration with existing IMMPL systems and workflows where possible",
-    "Emphasis on 'quick wins' that demonstrate immediate value and build momentum",
-    "Alignment with IMMPL's strategic goals and compliance requirements",
-    "A collaborative approach that builds internal ownership of AI initiatives"
+    "Department heads co-design the curriculum 2 weeks before sessions: ensures training addresses real pain points, not theoretical scenarios",
+    "Live troubleshooting of actual workflow challenges (not generic examples): participants bring real work to the session and leave with solutions",
+    "Tool selection based on your existing tech stack (not vendor-driven): maximizes adoption by building on familiar systems and interfaces",
+    "Focus on 'quick wins' that build momentum for larger transformations: achieving early success creates organizational enthusiasm for deeper change",
+    "Integration with existing change management frameworks: aligns with Syngenta India's current transformation initiatives and communication channels",
+    "Post-training reinforcement plan: follow-up sessions, office hours, and department-specific coaching for sustained behavior change",
+    "Measurement dashboard provided: track adoption rates, usage patterns, time savings, and business impact in real-time"
   ];
 
   return (
@@ -87,59 +122,71 @@ const Wave2 = () => {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-6">
             <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-1.5">
-              Module 2
+              Functional Excellence
             </Badge>
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">
-            AI Adoption & Workflow Enablement
-          </h1>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">AI Deep Dive</h1>
+          
+          <div className="mb-6 flex justify-center">
+            <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-6 py-2.5 md:py-3 shadow-xl">
+              <div className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <div className="w-1.5 h-1.5 bg-orange rounded-full"></div>
+              </div>
+              <span className="text-sm md:text-base font-semibold text-white tracking-wide">
+                A complete AI Enablement Program, powered by Futurelab Studios
+              </span>
+            </div>
+          </div>
+
           <div className="flex items-center justify-center gap-6 text-white/90 mb-4">
-            <span className="text-lg">Monthly Deployment</span>
+            <span className="text-lg">2 sessions × 3 hours</span>
             <span className="text-white/50">•</span>
-            <span className="text-lg">Cross-Functional Teams</span>
+            <span className="text-lg">Per Function</span>
           </div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
-            Collaborative workshops to identify high-impact AI opportunities across IMMPL, evaluate tools, and design custom solutions. Move from ideas to validated pilots ready for development.
+            Department-specific programs for Marketing, Sales, Finance, Supply Chain, R&D, and HR with metrics 
+            that matter to each agricultural function.
           </p>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16 bg-background">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Departments */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">
-              Function-Specific AI Opportunities
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+      {/* Content Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+          
+          {/* Functional Programs */}
+          <div>
+            <h2 className="text-3xl font-bold mb-3 text-center">Functional Programs</h2>
+            <p className="text-muted-foreground mb-12 text-lg text-center max-w-3xl mx-auto">
+              Each program is tailored to the specific workflows, KPIs, and pain points of that department.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
               {departments.map((dept, index) => {
                 const IconComponent = dept.icon;
                 return (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300">
-                    <CardHeader className="bg-gradient-to-br from-white to-muted/50">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center gap-4 mb-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
                           <IconComponent className="h-6 w-6 text-white" />
                         </div>
-                        <CardTitle className="text-2xl">{dept.title}</CardTitle>
+                        <CardTitle className="text-xl">{dept.title}</CardTitle>
                       </div>
+                      <Badge variant="outline" className="w-fit text-xs">
+                        Expected Impact: {dept.metrics}
+                      </Badge>
                     </CardHeader>
-                    <CardContent className="pt-6 space-y-6">
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3">AI Opportunities:</h4>
-                        <ul className="space-y-2">
-                          {dept.focus.map((item, i) => (
-                            <li key={i} className="text-sm text-muted-foreground flex items-start">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className="bg-accent/5 p-3 rounded-lg border border-accent/20">
-                        <p className="text-sm font-semibold text-foreground">{dept.metrics}</p>
-                      </div>
+                    <CardContent>
+                      <ul className="space-y-3">
+                        {dept.focus.map((item, idx) => (
+                          <li key={idx} className="flex items-start gap-3">
+                            <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </CardContent>
                   </Card>
                 );
@@ -147,54 +194,98 @@ const Wave2 = () => {
             </div>
           </div>
 
-          {/* Outcomes */}
-          <section className="bg-primary/5 border border-primary/20 rounded-xl p-8 md:p-12 mb-16">
-            <h3 className="text-3xl font-bold text-foreground mb-8">Expected Outcomes</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {outcomes.map((outcome, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <p className="text-muted-foreground">{outcome}</p>
+          {/* HR & Learning */}
+          <Card className="border-0 shadow-lg bg-gradient-to-br from-muted/30 to-muted/10">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
+                  <Users className="h-6 w-6 text-white" />
                 </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Implementation */}
-          <section className="bg-orange/5 border border-orange/20 rounded-xl p-8 md:p-12 mb-16">
-            <h3 className="text-3xl font-bold text-foreground mb-8">How We Work</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {implementation.map((item, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-orange text-white font-bold">
-                      {index + 1}
-                    </div>
-                  </div>
-                  <p className="text-muted-foreground pt-1">{item}</p>
+                <div>
+                  <CardTitle className="text-xl">HR & Learning Deep Dive</CardTitle>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Expected Impact: Accelerated hiring cycles and streamlined L&D content creation
+                  </p>
                 </div>
-              ))}
-            </div>
-          </section>
-
-          {/* What Makes This Work */}
-          <section className="bg-green/5 border border-green/20 rounded-xl p-8 md:p-12">
-            <h3 className="text-3xl font-bold text-foreground mb-8 flex items-center">
-              <CheckCircle className="h-8 w-8 mr-3 text-green" />
-              What Makes This Work
-            </h3>
-            <ul className="space-y-3">
-              {whatMakesThisWork.map((item, index) => (
-                <li key={index} className="text-muted-foreground flex items-start">
-                  <div className="w-1.5 h-1.5 bg-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  {item}
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">AI-designed learning pathways for agronomists, field teams, and commercial roles personalized to career aspirations</span>
                 </li>
-              ))}
-            </ul>
-          </section>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">Automated job description creation for specialized agriculture roles and evaluation rubrics aligned to Syngenta's competency frameworks</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">Culture & capability intelligence from organizational knowledge, field feedback, and agronomic expertise patterns</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Implementation Approach */}
+          <div>
+            <h2 className="text-3xl font-bold mb-8">How We Make This Work</h2>
+            <Card className="border-2 border-primary/20">
+              <CardContent className="p-8">
+                <ul className="space-y-4">
+                  {implementation.map((item, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-primary font-bold text-sm">{index + 1}</span>
+                      </div>
+                      <span className="text-foreground leading-relaxed pt-1">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* What Makes This Different */}
+          <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl">What Makes This Different</CardTitle>
+              <p className="text-muted-foreground mt-2">
+                Not your typical "AI awareness" workshop: this is hands-on enablement
+              </p>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-4">
+                {whatMakesThisWork.map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <AlertCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Expected Outcomes */}
+          <div>
+            <h2 className="text-3xl font-bold mb-8">Expected Outcomes</h2>
+            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-lg">
+              <CardContent className="p-8">
+                <ul className="space-y-5">
+                  {outcomes.map((outcome, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <CheckCircle className="h-7 w-7 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-lg font-medium text-foreground leading-relaxed">{outcome}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
         </div>
       </section>
-
+      
       <Footer />
     </div>
   );

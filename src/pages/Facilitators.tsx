@@ -77,10 +77,24 @@ const Facilitators = () => {
         
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
-            The Team
+            Your Facilitators
           </h1>
+          
+          <div className="mb-6 flex justify-center">
+            <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-6 py-2.5 md:py-3 shadow-xl">
+              <div className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <div className="w-1.5 h-1.5 bg-orange rounded-full"></div>
+              </div>
+              <span className="text-sm md:text-base font-semibold text-white tracking-wide">
+                A complete AI Enablement Program, powered by Futurelab Studios
+              </span>
+            </div>
+          </div>
+
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            4-person team deployed for the 4-month partnership: 2 strategic leaders + 2 senior developers with proven experience building financial planning platforms.
+            Industry veterans with deep expertise in AI enablement, business strategy, and organizational transformation.
           </p>
         </div>
       </section>
