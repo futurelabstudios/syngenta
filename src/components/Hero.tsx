@@ -31,21 +31,26 @@ const Hero = () => {
               />
             </div>
 
-            <div className="mb-4 md:mb-6">
-              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3">
-                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                <span className="text-sm md:text-base font-medium text-white/90 tracking-wide">
-                  AI Enablement Proposal by Futurelab Studios
-                </span>
-              </div>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8 text-white">
               Future Ready{" "}
               <span className="text-white block mt-2">
                 Syngenta India
               </span>
             </h1>
+            
+            <div className="mb-6 md:mb-8 flex justify-center lg:justify-start">
+              <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border border-white/40 rounded-lg px-4 md:px-6 py-2.5 md:py-3 shadow-xl">
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-orange rounded-full"></div>
+                </div>
+                <span className="text-sm md:text-base font-semibold text-white tracking-wide">
+                  A complete AI Enablement Program, powered by Futurelab Studios
+                </span>
+              </div>
+            </div>
+
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Enterprise AI Enablement & Capability Building for Syngenta India's science-driven agriculture operations.
             </p>
