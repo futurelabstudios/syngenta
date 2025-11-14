@@ -7,58 +7,61 @@ const ProgramOverview = () => {
   const waves = [
     {
       id: 1,
-      title: "Executive Committee",
-      subtitle: "Strategic AI Leadership",
+      title: "AI Essentials",
+      subtitle: "Foundation for All Teams",
       icon: Crown,
-      participants: "Executive Committee",
+      participants: "All Teams including Leadership",
       duration: "2 Sessions × 3 Hours",
-      schedule: "Spread across 2 weeks",
+      schedule: "Foundation building for organization-wide adoption",
       focus: [
-        "Leadership & strategic AI vision",
-        "Futures thinking & exponential technologies",
-        "FMCG-specific AI use cases & live demos",
-        "Strategic implementation frameworks",
-        "Comprehensive executive toolkit"
+        "The real AI landscape for large FMCG: what matters, what doesn't",
+        "Everyday productivity stack (Docs, Sheets, Email, Research, Comms)",
+        "Data privacy, brand safety, and compliance",
+        "Cross-functional beverage industry use cases",
+        "Auto-generating trend summaries from consumer data",
+        "Automating weekly sales reports & market visit summaries"
       ],
+      outcome: "Everyone speaks the same AI vocabulary | Immediate productivity gains",
       color: "bg-primary",
       accentColor: "border-l-4 border-secondary",
       href: "/wave-1"
     },
     {
       id: 2,
-      title: "Senior Management",
-      subtitle: "Operational AI Excellence",
+      title: "AI Deep Dive",
+      subtitle: "Functional Excellence Programs",
       icon: Building2,
-      participants: "Senior Management Team",
-      duration: "4 Sessions × 2 Hours",
-      schedule: "Comprehensive training program",
+      participants: "Department-Specific Teams",
+      duration: "2 Sessions × 3 Hours per Function",
+      schedule: "Marketing, Sales, Finance, Supply Chain, HR",
       focus: [
-        "Comprehensive GenAI overview & prompt engineering",
-        "AI for analytics & data-driven decisions",
-        "Presentation automation & creative content",
-        "Personalized AI tools & assistants",
-        "Domain-specific sessions (Marketing, Sales, Finance)",
-        "Critical thinking & advanced applications"
+        "Marketing: Campaign pretesting, consumer insights, content workflows",
+        "Sales: AI assistant for beat plans, retailer insights, distributor analytics",
+        "Finance: Automated reconciliations, P&L commentary, variance analysis",
+        "Supply Chain: Demand forecasting, route optimization, supplier risk intelligence",
+        "HR: Learning pathways, job descriptions, capability intel"
       ],
+      outcome: "Team-level adoption | Efficiency gains measurable within 30 days",
       color: "bg-accent",
       accentColor: "border-l-4 border-orange",
       href: "/wave-2"
     },
     {
       id: 3,
-      title: "Organization-Wide",
-      subtitle: "Democratizing AI Knowledge",
+      title: "AI Builders Program",
+      subtitle: "Prototyping & Custom Solutions",
       icon: Globe,
-      participants: "Larger Organization",
-      duration: "To be determined",
-      schedule: "In consultation with HR & Capability team",
+      participants: "Cross-Functional Teams",
+      duration: "2-6 Weeks Sprint",
+      schedule: "Enablement + Prototyping Sprint",
       focus: [
-        "Collaborative program design with HR team",
-        "Multi-tiered training structure",
-        "Role-specific AI implementation",
-        "Change management & adoption support",
-        "Continuous learning & sustainability"
+        "AI Sales Assistant trained on HCCB GTM processes and beat planning",
+        "Marketing research bot reading past trackers & presentations",
+        "Finance autopilot for month-end closings",
+        "Internal knowledge search agent for commercial teams",
+        "Custom GPT powered by brand codes & guidelines"
       ],
+      outcome: "Working prototypes | Deployment readiness | Repeatable AI operating model",
       color: "bg-green",
       accentColor: "border-l-4 border-secondary",
       href: "/wave-3"
@@ -70,12 +73,13 @@ const ProgramOverview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Future Ready PepsiCo - The Workshop Program Details
+            Program Options
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive three-wave AI enablement program designed to empower PepsiCo India's 
-            leadership at every level with cutting-edge AI capabilities and strategic foresight to 
-            thrive in the intelligence age.
+            Three tailored programs designed to build AI capability across HCCB: from 
+            foundation building to functional excellence to custom prototyping. Each program 
+            combines proven adult learning principles, hands-on practice, and real-world FMCG 
+            scenarios to ensure knowledge transfer and sustainable adoption.
           </p>
         </div>
 
@@ -89,14 +93,10 @@ const ProgramOverview = () => {
                   <div className={`w-16 h-16 ${wave.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
                     <IconComponent className="h-8 w-8 text-white" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-2xl font-bold text-primary">Wave {wave.id}</span>
-                    <div className="flex-1 h-px bg-border"></div>
-                  </div>
-                  <CardTitle className="text-xl font-bold text-foreground">
+                  <CardTitle className="text-2xl font-bold text-foreground mb-2">
                     {wave.title}
                   </CardTitle>
-                  <p className="text-muted-foreground font-medium">{wave.subtitle}</p>
+                  <p className="text-muted-foreground font-medium text-sm">{wave.subtitle}</p>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
@@ -127,6 +127,12 @@ const ProgramOverview = () => {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  {/* Outcome */}
+                  <div className="pt-3 border-t">
+                    <p className="text-sm font-semibold text-primary mb-1">Expected Outcome:</p>
+                    <p className="text-sm text-muted-foreground">{wave.outcome}</p>
                   </div>
 
                   {/* CTA */}

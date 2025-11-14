@@ -80,7 +80,8 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-pepsi': 'var(--gradient-pepsi)',
+				'gradient-coke': 'var(--gradient-coke)',
+				'gradient-pepsi': 'var(--gradient-coke)', // Alias for backward compatibility
 				'gradient-vibrant': 'var(--gradient-vibrant)'
 			},
 			borderRadius: {

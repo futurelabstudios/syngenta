@@ -2,41 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* PepsiCo Brand Color System */
+/* HCCB Brand Color System */
 
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 210 100% 15%; /* Pepsi Dark Blue #004B93 */
+    --foreground: 0 0% 10%; /* Dark text for readability */
 
     --card: 0 0% 100%;
-    --card-foreground: 210 100% 15%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 100% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Classic Pepsi Blue #004B93 */
-    --primary: 210 100% 29%;
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 210 100% 25%;
-    --primary-light: 210 100% 36%; /* #005CB4 */
+    /* Classic Coca-Cola Red #F40009 */
+    --primary: 358 98% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 358 98% 42%;
+    --primary-light: 358 98% 55%;
 
-    /* Classic Pepsi Red #C9002B */
-    --secondary: 342 100% 39%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-hover: 342 100% 35%;
+    /* White/Silver for contrast */
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 358 98% 48%;
+    --secondary-hover: 0 0% 95%;
 
-    /* Pepsi Light Blue for accents */
-    --accent: 210 100% 36%;
-    --accent-foreground: 0 0% 98%;
-    --accent-hover: 210 100% 32%;
+    /* Accent Red (lighter shade) */
+    --accent: 358 98% 55%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 358 98% 48%;
 
-    /* Pepsi Silver/White for contrast */
-    --muted: 210 20% 96%;
-    --muted-foreground: 210 20% 40%;
+    /* Silver/Grey for contrast */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
     /* Additional brand colors for consistency */
     --orange: 22 100% 52%; /* Complementary orange for highlights */
@@ -45,16 +45,16 @@
     --green: 142 76% 36%; /* Professional green for success states */
     --green-foreground: 0 0% 98%;
 
-    --border: 210 30% 88%;
-    --input: 210 30% 88%;
-    --ring: 210 100% 29%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 358 98% 48%;
 
-    /* Bold Pepsi Brand Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 29%), hsl(210 100% 36%));
-    --gradient-secondary: linear-gradient(135deg, hsl(342 100% 39%), hsl(342 100% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 29%) 0%, hsl(210 100% 36%) 50%, hsl(342 100% 39%) 100%);
-    --gradient-pepsi: linear-gradient(135deg, hsl(210 100% 29%) 0%, hsl(342 100% 39%) 100%);
-    --gradient-vibrant: linear-gradient(45deg, hsl(210 100% 29%), hsl(210 100% 36%), hsl(342 100% 39%), hsl(210 100% 29%));
+    /* Bold Brand Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(358 98% 48%), hsl(358 98% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(358 98% 48%) 0%, hsl(358 98% 42%) 50%, hsl(0 0% 100%) 100%);
+    --gradient-coke: linear-gradient(135deg, hsl(358 98% 48%) 0%, hsl(358 98% 55%) 100%);
+    --gradient-vibrant: linear-gradient(45deg, hsl(358 98% 48%), hsl(358 98% 55%), hsl(358 98% 42%), hsl(358 98% 48%));
 
     --radius: 1rem;
 

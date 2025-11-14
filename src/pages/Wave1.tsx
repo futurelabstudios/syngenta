@@ -1,265 +1,263 @@
 import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Crown, Clock, Users, BookOpen, Target, Lightbulb, TrendingUp, Download } from "lucide-react";
+import { CheckCircle, AlertCircle } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
+
 const Wave1 = () => {
-  const sessions = [{
-    number: 1,
-    title: "Generative AI Foundations & Strategic Applications",
-    duration: "3 Hours",
-    topics: [
-      "Comprehensive overview of Generative AI and exponential technologies landscape", 
-      "Live demo of top AI tools for critical thinking, reasoning, and data analysis", 
-      "Interactive showcase: AI-powered presentation tools and automated report generation", 
-      "AI for Sales & Marketing: Customer segmentation, personalized campaigns, sales forecasting",
-      "AI for Strategy: Market analysis, competitive intelligence, strategic planning",
-      "AI for Data Sciences: Predictive analytics, consumer behavior analysis, ML deployment",
-      "Business analytics using AI: Real-time insights and predictive modeling", 
-      "Discussion on use cases of Generative AI across FMCG and other industries",
-      "Hands-on session: Leadership will build basic AI workflows during the session"
-    ],
-    learningOutcomes: [
-      "Master the fundamentals of Generative AI and its business applications", 
-      "Gain hands-on experience with enterprise AI tools for executive decision-making", 
-      "Understand AI applications across Sales & Marketing, Strategy, and Data Sciences", 
-      "Develop foundational prompt engineering skills for effective AI communication",
-      "Identify specific AI implementation opportunities across core business functions"
-    ],
-    deliverables: [
-      "Generative AI Landscape Overview Guide", 
-      "Executive AI Tools Toolkit with access credentials", 
-      "AI Business Functions Implementation Matrix", 
-      "Foundational Prompt Engineering Quick Reference",
-      "Digital handout with session summaries and resources"
-    ]
-  }, {
-    number: 2,
-    title: "AI Agents, Personal Assistants & Future Implementation",
-    duration: "3 Hours", 
-    topics: [
-      "Introduction to AI agents and AI personal assistants: Architecture and applications", 
-      "Live demo: Building customized AI assistants for executive workflows", 
-      "AI-based coding demonstration: Creating simple apps and websites using AI",
-      "AI for Operations Excellence: Supply chain optimization, quality control, process automation",
-      "AI for General Business: BI automation, decision support, workflow optimization",
-      "Advanced prompt engineering: From intermediate to expert proficiency",
-      "Discussion on the future of AI: Trends, opportunities, and strategic implications", 
-      "AI ethics and governance: Responsible AI implementation frameworks", 
-      "FMCG-specific implications: Industry transformation and competitive positioning", 
-      "Advanced hands-on session: Building custom AI solutions during the workshop"
-    ],
-    learningOutcomes: [
-      "Understand AI agents and personal assistants for executive productivity", 
-      "Learn AI-assisted coding techniques for custom solution development",
-      "Master advanced prompt engineering and AI communication strategies",
-      "Understand AI applications for Operations Excellence and General Business functions",
-      "Develop frameworks for AI ethics and governance implementation", 
-      "Create strategic roadmaps for AI adoption in FMCG context"
-    ],
-    deliverables: [
-      "AI Agents Implementation Guide for Executives", 
-      "Custom AI Assistant Templates and Setup Instructions", 
-      "Advanced Prompt Engineering Mastery Guide",
-      "AI Ethics & Governance Framework for FMCG", 
-      "Strategic AI Roadmap Template",
-      "Digital handout with advanced resources and next steps"
-    ]
-  }];
-  const overallOutcomes = ["Comprehensive understanding of Generative AI and exponential technologies", "Hands-on proficiency with top AI tools for critical thinking and data analysis", "Deep knowledge of AI applications across Sales & Marketing, Strategy, Data Sciences, and Operations", "Intermediate-level prompt engineering and AI communication skills", "Practical experience building AI workflows and custom solutions", "Strategic insights into AI agents and personal assistants for productivity", "Framework for AI ethics, governance, and responsible implementation", "FMCG-specific AI applications and competitive positioning strategies"];
-  const overallDeliverables = ["Comprehensive Generative AI toolkit with premium access credentials", "AI Business Functions Implementation Matrix for all departments", "Digital handouts and resources for each session", "Custom AI assistant templates and implementation guides", "Prompt engineering reference materials and best practices", "AI ethics and governance framework for FMCG implementation", "Hands-on workshop artifacts: Built AI workflows and applications", "Strategic roadmap for organizational AI adoption and transformation"];
-  return <div className="min-h-screen bg-background">
+  const segments = [
+    {
+      title: "AI Landscape & Prompt Engineering",
+      subtitle: "The Art of Talking to AI",
+      icon: "🎯",
+      color: "bg-primary",
+      topics: [
+        "Understanding the real AI landscape for FMCG: separating signal from noise",
+        "GPT, Claude, Gemini: which models work best for which enterprise use cases",
+        "Prompt engineering fundamentals: how to communicate effectively with AI",
+        "Advanced prompting techniques: chain-of-thought, few-shot learning, role-based prompts",
+        "Crafting context-rich prompts that deliver high-quality, actionable outputs",
+        "Common pitfalls and how to avoid hallucinations in AI responses"
+      ],
+      examples: [
+        "Transform vague queries into precise prompts that save 70% iteration time",
+        "Extract structured insights from unstructured data (customer feedback, market research)",
+        "Generate executive summaries from 50-page reports in 2 minutes"
+      ]
+    },
+    {
+      title: "Productivity Tools for FMCG Teams",
+      subtitle: "Everyday Efficiency Multipliers",
+      icon: "⚡",
+      color: "bg-accent",
+      topics: [
+        "AI-powered document generation: reports, memos, presentations in minutes",
+        "Smart email management: auto-drafts, priority sorting, meeting extraction",
+        "Intelligent spreadsheet automation: data analysis, trend identification, forecasting",
+        "Research acceleration: competitive intelligence, market trends, consumer insights",
+        "Meeting productivity: AI note-taking, action items, follow-ups",
+        "Collaborative work tools: real-time co-creation with AI assistance"
+      ],
+      examples: [
+        "Auto-generate weekly sales reports with data validation (70% time reduction)",
+        "Create market visit summaries in 5 minutes vs. 45 minutes",
+        "Transform raw POS data into actionable distributor insights"
+      ]
+    },
+    {
+      title: "AI Creative Suite for FMCG Teams",
+      subtitle: "Marketing & Content at Scale",
+      icon: "🎨",
+      color: "bg-orange",
+      topics: [
+        "Brand-safe content generation: maintaining voice and compliance at scale",
+        "Visual asset creation: concept mockups, social media content, presentations",
+        "Campaign ideation and rapid prototyping: 10 concepts in the time of 1",
+        "Localization at scale: adapting content for regional markets and languages",
+        "Video and multimedia: storyboarding, scripting, editing with AI assistance",
+        "Creative workflows that integrate brand guidelines and approval processes"
+      ],
+      examples: [
+        "Generate 50 social media variants for a campaign in 20 minutes",
+        "Create retailer-specific promotional materials with localized messaging",
+        "Develop brand-compliant JBP decks with automated data integration"
+      ]
+    },
+    {
+      title: "AI for Automation & Agents",
+      subtitle: "Building Intelligent Workflows",
+      icon: "🤖",
+      color: "bg-green",
+      topics: [
+        "Understanding AI agents: autonomous systems that work on your behalf",
+        "Workflow automation with AI: eliminate repetitive tasks completely",
+        "Data extraction and processing: from invoices to contracts to reports",
+        "Custom GPTs and assistants: building role-specific AI tools",
+        "Integration with existing systems: CRM, ERP, data warehouses",
+        "Governance and safety: ensuring AI agents operate within guardrails"
+      ],
+      examples: [
+        "Auto-generate flavour trend summaries from consumer data (saves 4-6 hours/week)",
+        "AI checklists for safe usage of brand assets: prevent compliance issues",
+        "Automated inventory optimization alerts based on demand patterns"
+      ]
+    }
+  ];
+
+  const outcomes = [
+    "Everyone speaks the same AI vocabulary: critical for org-wide adoption and cross-functional collaboration",
+    "Organizational confidence in safe and correct use: reduces shadow IT risks and ensures compliance with data governance policies",
+    "Immediate productivity lift based on industry benchmarks from similar FMCG organizations",
+    "Established foundation for advanced AI adoption: teams understand when and how to leverage AI for their specific workflows",
+    "Reduced resistance to change: participants see firsthand how AI augments rather than replaces human expertise",
+    "Clear AI governance framework in place: policies, guidelines, and escalation paths for safe organizational use"
+  ];
+
+  const prerequisites = [
+    "Participants should have basic familiarity with Microsoft 365 or Google Workspace",
+    "Access to company email and collaboration tools during session",
+    "Willingness to share anonymized work scenarios for contextualization"
+  ];
+
+  const successFactors = [
+    "Leadership buy-in and visible participation sets adoption tone: executives modeling AI usage significantly accelerates team adoption",
+    "Post-session implementation time allocated (minimum 2 hours/week for 4 weeks): practice time is critical for skill retention and habit formation",
+    "Department champions identified to support peer learning: champion networks substantially increase adoption rates",
+    "Integration with existing performance metrics: AI usage and productivity gains tracked as part of team KPIs",
+    "Regular reinforcement through internal communications: success stories, tips, and use cases shared via existing channels",
+    "Access to ongoing learning resources: curated libraries, templates, and best practice repositories for continuous improvement"
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-primary text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Crown className="h-8 w-8 text-white" />
-            </div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Wave 1: Executive Committee</h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Comprehensive Generative AI and exponential technologies program featuring live demos, hands-on building sessions, 
-              and strategic implementation guidance for executive leadership transformation
-            </p>
+      <section className="relative bg-gradient-primary text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center mb-6">
+            <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-1.5">
+              Foundation Program
+            </Badge>
           </div>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center tracking-tight">AI Essentials</h1>
+          <div className="flex items-center justify-center gap-6 text-white/90 mb-4">
+            <span className="text-lg">2 sessions × 3 hours</span>
+            <span className="text-white/50">•</span>
+            <span className="text-lg">All Teams + Leadership</span>
+          </div>
+          <p className="text-lg text-white/80 max-w-3xl mx-auto text-center leading-relaxed">
+            Foundation building program designed for immediate productivity gains. Learn the real AI landscape 
+            for enterprise FMCG operations: what works, what doesn't, and why it matters.
+          </p>
         </div>
       </section>
 
-      {/* Program Details */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <Card>
-              <CardContent className="p-6 text-center">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Participants</h3>
-                <p className="text-muted-foreground">Executive Committee Members</p>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardContent className="p-6 text-center">
-                <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Duration</h3>
-                <p className="text-muted-foreground">2 Sessions × 3 Hours Each</p>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardContent className="p-6 text-center">
-                <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Schedule</h3>
-                <p className="text-muted-foreground">Spread Across 2 Weeks</p>
-              </CardContent>
-            </Card>
+      {/* Content Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+          
+          {/* Program Overview */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-3">Four Strategic Pillars</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              Practical AI skills you can apply immediately. 
+              Each segment includes hands-on exercises with FMCG-specific scenarios.
+            </p>
           </div>
 
-          {/* Program Highlights */}
-          <div className="mb-16">
-            <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+          {/* Four Segments */}
+          {segments.map((segment, index) => (
+            <Card key={index} className="border-0 shadow-xl overflow-hidden">
+              <div className={`${segment.color} text-white p-6`}>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="text-4xl">{segment.icon}</span>
+                  <div>
+                    <h2 className="text-3xl font-bold">{segment.title}</h2>
+                    <p className="text-white/90 text-lg">{segment.subtitle}</p>
+                  </div>
+                </div>
+              </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-center mb-6">Program Highlights</h3>
-                <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <TrendingUp className="h-8 w-8 text-white" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Progressive Learning</h4>
-                    <p className="text-sm text-muted-foreground">From beginner to intermediate level in prompt engineering and AI-based coding</p>
+                    <h3 className="text-xl font-bold mb-4 text-foreground">What You'll Learn</h3>
+                    <ul className="space-y-3">
+                      {segment.topics.map((topic, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span className="text-muted-foreground">{topic}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   <div>
-                    <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="h-8 w-8 text-white" />
+                    <h3 className="text-xl font-bold mb-4 text-foreground">HCCB Use Cases</h3>
+                    <div className="space-y-4">
+                      {segment.examples.map((example, idx) => (
+                        <Card key={idx} className="border-l-4 border-primary bg-primary/5">
+                          <CardContent className="p-4">
+                            <div className="flex items-start gap-3">
+                              <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-2"></div>
+                              <span className="text-foreground font-medium">{example}</span>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
                     </div>
-                    <h4 className="font-semibold mb-2">Hands-On Building</h4>
-                    <p className="text-sm text-muted-foreground">Leadership will build customized apps and websites using AI during sessions</p>
-                  </div>
-                  <div>
-                    <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Lightbulb className="h-8 w-8 text-white" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Live Demo & Showcase</h4>
-                    <p className="text-sm text-muted-foreground">Interactive demonstrations with immediate practical application</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-
-
-          {/* Sessions Breakdown */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Detailed Session Breakdown</h2>
-            <div className="space-y-12">
-              {sessions.map(session => <Card key={session.number} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <CardHeader className={`${session.number === 1 ? 'bg-gradient-to-r from-primary/20 to-secondary/20' : 'bg-gradient-to-r from-accent/20 to-orange/20'} border-b`}>
-                    <CardTitle className="flex items-center text-2xl">
-                      <div className={`w-12 h-12 ${session.number === 1 ? 'bg-primary' : 'bg-accent'} text-white rounded-full flex items-center justify-center mr-4 text-lg font-bold shadow-lg`}>
-                        {session.number}
-                      </div>
-                      <div className="flex-1">
-                        <div className="text-xl font-bold text-foreground">{session.title}</div>
-                        <div className="text-sm text-muted-foreground mt-1">Duration: {session.duration}</div>
-                      </div>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-8">
-                    <div className="grid lg:grid-cols-3 gap-8">
-                      {/* Session Topics */}
-                      <div className="lg:col-span-1">
-                        <h4 className="font-bold text-foreground mb-4 flex items-center">
-                          <Target className="h-5 w-5 text-primary mr-2" />
-                          Session Content
-                        </h4>
-                        <div className="space-y-3">
-                          {session.topics.map((topic, index) => <div key={index} className="flex items-start">
-                              <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                              <span className="text-sm text-muted-foreground leading-relaxed">{topic}</span>
-                            </div>)}
-                        </div>
-                      </div>
-
-                      {/* Learning Outcomes */}
-                      <div className="lg:col-span-1">
-                        <h4 className="font-bold text-foreground mb-4 flex items-center">
-                          <Lightbulb className="h-5 w-5 text-secondary mr-2" />
-                          Learning Outcomes
-                        </h4>
-                        <div className="space-y-3">
-                          {session.learningOutcomes.map((outcome, index) => <div key={index} className="flex items-start">
-                              <div className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                              <span className="text-sm text-muted-foreground leading-relaxed">{outcome}</span>
-                            </div>)}
-                        </div>
-                      </div>
-
-                      {/* Deliverables */}
-                      <div className="lg:col-span-1">
-                        <h4 className="font-bold text-foreground mb-4 flex items-center">
-                          <Download className="h-5 w-5 text-accent mr-2" />
-                          Session Deliverables
-                        </h4>
-                        <div className="space-y-3">
-                          {session.deliverables.map((deliverable, index) => <div key={index} className="flex items-start">
-                              <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                              <span className="text-sm text-muted-foreground leading-relaxed">{deliverable}</span>
-                            </div>)}
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>)}
-            </div>
-          </div>
+          ))}
 
           {/* Expected Outcomes */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Expected Outcomes</h2>
-            <Card>
+          <div>
+            <h2 className="text-3xl font-bold mb-3">Expected Outcomes</h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Realistic, measurable results based on our work with 50+ enterprise clients.
+            </p>
+            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0 shadow-lg">
               <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <Lightbulb className="h-6 w-6 text-primary mr-2" />
-                      Key Learning Outcomes
-                    </h3>
-                    <ul className="space-y-3">
-                      {overallOutcomes.map((outcome, index) => <li key={index} className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                          <span className="text-muted-foreground">{outcome}</span>
-                        </li>)}
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <Download className="h-6 w-6 text-primary mr-2" />
-                      Deliverables
-                    </h3>
-                    <ul className="space-y-3">
-                      {overallDeliverables.map((deliverable, index) => <li key={index} className="flex items-start">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                          <span className="text-muted-foreground">{deliverable}</span>
-                        </li>)}
-                    </ul>
-                  </div>
-                </div>
+                <ul className="space-y-5">
+                  {outcomes.map((outcome, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <CheckCircle className="h-7 w-7 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-lg font-medium text-foreground leading-relaxed">{outcome}</span>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center">
-            <Card className="bg-gradient-hero text-white">
-              
-            </Card>
-          </div>
+          {/* Prerequisites */}
+          <Card className="bg-muted/30 border-0">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <AlertCircle className="h-6 w-6 text-primary" />
+                Prerequisites for Success
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                {prerequisites.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-muted-foreground">
+                    <span className="text-primary mt-1">→</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Success Factors */}
+          <Card className="border-2 border-primary/20">
+            <CardHeader>
+              <CardTitle className="text-xl">Critical Success Factors</CardTitle>
+              <p className="text-sm text-muted-foreground mt-2">
+                From our experience, these factors significantly increase adoption rates
+              </p>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                {successFactors.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
         </div>
       </section>
       
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Wave1;

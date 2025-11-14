@@ -9,32 +9,32 @@ const Facilitators = () => {
   const facilitators = [
     {
       name: "Shabbir Haider",
-      role: "Founder, FutureLab Studios",
-      experience: "13+ Years",
+      role: "Founder, Futurelab Studios",
+      experience: "",
       image: "/images/Shabbir Haider.jpeg",
       background: "bg-gradient-primary",
-      description: "Shabbir Haider is the founder of FutureLab Studios, an AI enablement and innovation company helping organizations adopt AI meaningfully.",
+      description: "Shabbir Haider is the founder of Futurelab Studios, an AI enablement and innovation company helping organizations adopt AI meaningfully.",
       details: [
-        "13+ years of experience across business strategy and technology transformation",
-        "Alumni of Amul, PepsiCo, and Mondelez",
+        "Extensive experience across business strategy and technology transformation",
+        "Alumni of leading FMCG companies including PepsiCo, Mondelez, and Amul",
         "Engineer from Jadavpur University and MBA from IRMA",
         "Part of the first cohort at The Network School (Singapore-Johor SEZ)",
-        "Startup community advancing emerging technologies"
+        "Members of Several Global Forums on Emerging Technologies"
       ],
       expertise: ["AI Strategy", "Business Transformation", "FMCG Industry", "Technology Innovation"],
-      companies: ["PepsiCo", "Amul", "Mondelez", "Wipro"]
+      companies: ["Mondelez", "PepsiCo", "Wipro", "Amul"]
     },
     {
       name: "Kuntal Sharma",
-      role: "Co-founder, FutureLab Studios",
-      experience: "13+ Years",
+      role: "Co-founder, Futurelab Studios",
+      experience: "",
       image: "/images/Kuntal Sharma.png",
       background: "bg-gradient-secondary",
-      description: "Kuntal Sharma is a marketing and growth leader with extensive experience across leading brands and the co-founder of FutureLab Studios.",
+      description: "Kuntal Sharma is a marketing and growth leader with extensive experience across leading brands and the co-founder of Futurelab Studios.",
       details: [
-        "13+ years of experience in marketing and growth with leading brands",
+        "Extensive experience in marketing and growth with leading brands",
         "Experience with Google, Paytm, Airtel & Amul",
-        "Co-founder of FutureLab Studios and runs Everything Boho",
+        "Co-founder of Futurelab Studios and runs Everything Boho",
         "Modern bohemian lifestyle D2C brand reimagining home and style",
         "Alumna of Lady Shri Ram College with MBA from IRMA",
         "Cohort member at The Network School (Singapore-Johor SEZ)"
@@ -47,13 +47,13 @@ const Facilitators = () => {
   const achievements = [
     {
       icon: Users,
-      title: "Combined 26+ Years",
-      description: "Experience across technology, strategy, and marketing"
+      title: "Deep Industry Experience",
+      description: "Expertise across technology, strategy, and marketing"
     },
     {
       icon: Building,
       title: "Top-Tier Companies",
-      description: "PepsiCo, Google, Amul, Paytm, Airtel, Mondelez"
+      description: "Leading FMCG, Google, Amul, Paytm, Airtel, Mondelez"
     },
     {
       icon: Lightbulb,
@@ -72,23 +72,15 @@ const Facilitators = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-vibrant text-white py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-40 h-40 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-secondary/20 rounded-full blur-lg"></div>
-        </div>
+      <section className="relative bg-gradient-primary text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-            Meet Your{" "}
-            <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-              Facilitators
-            </span>
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
+            Your Facilitators
           </h1>
-          <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto">
-            Industry veterans with deep expertise in AI, business strategy, and organizational transformation.
+          <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Industry veterans with deep expertise in AI enablement, business strategy, and organizational transformation.
           </p>
         </div>
       </section>
@@ -112,11 +104,13 @@ const Facilitators = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 lg:left-4 lg:transform-none">
-                        <Badge className={`${facilitator.background} text-white border-0 px-4 py-2`}>
-                          {facilitator.experience}
-                        </Badge>
-                      </div>
+                      {facilitator.experience && (
+                        <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 lg:left-4 lg:transform-none">
+                          <Badge className={`${facilitator.background} text-white border-0 px-4 py-2`}>
+                            {facilitator.experience}
+                          </Badge>
+                        </div>
+                      )}
                     </div>
                     
                     <h3 className="text-2xl font-bold text-foreground mb-2">{facilitator.name}</h3>
@@ -186,7 +180,7 @@ const Facilitators = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Card className="bg-gradient-pepsi text-white border-0 shadow-2xl">
+              <Card className="bg-gradient-coke text-white border-0 shadow-2xl">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6">Our Impact</h3>
                   <div className="grid grid-cols-2 gap-6">

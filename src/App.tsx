@@ -8,6 +8,8 @@ import Wave1 from "./pages/Wave1";
 import Wave2 from "./pages/Wave2";
 import Wave3 from "./pages/Wave3";
 import Facilitators from "./pages/Facilitators";
+import FAQ from "./pages/FAQ";
+import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/wave-2" element={<Wave2 />} />
           <Route path="/wave-3" element={<Wave3 />} />
           <Route path="/facilitators" element={<Facilitators />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
